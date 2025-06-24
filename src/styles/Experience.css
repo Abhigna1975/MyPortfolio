@@ -23,7 +23,7 @@
   margin: 0;
   z-index: 2;
   left: 30px;
-  top: 280px;
+  top: 170px;
   transform: rotate(-90deg);
   transform-origin: center;
 }
@@ -39,7 +39,7 @@
   margin: 0;
   z-index: 1;
   left: 35px;
-  top: 310px;
+  top: 200px;
   transform: rotate(-90deg);
   transform-origin: center;
 }

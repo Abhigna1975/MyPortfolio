@@ -3,47 +3,46 @@ import React from 'react';
 import '../styles/TechnicalSkills.css';
 
 const skills = {
-  'Programming Languages': ['Java', 'R', 'C', 'JavaScript', 'Python', 'C#'],
-  'Big Data / Database': ['Hadoop', 'Cassandra', 'MongoDB', 'PostgreSQL'],
-  'ML / AI Libraries and Tools': [
-    'Keras', 'Pandas', 'NumPy', 'Scikit-learn', 'Jupyter', 'Pytest',
-    'NLTK', 'SpaCy', 'Hugging Face', 'Seaborn', 'Matplotlib'
-  ],
-  'DevOps / Tools': ['Jira', 'Jenkins', 'Git', 'Docker', 'Kubernetes', 'Airflow'],
-  'Operating Systems': ['Linux', 'Windows'],
-  'Frameworks': ['Spring', 'Hibernate', 'Django'],
+  'Frontend Technologies': ['HTML5', 'CSS3', 'JavaScript', 'React'],
+  'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
+  'CSS & Styling': ['Tailwind CSS','Styled Components'],
+  'Development Tools': ['Git', 'VS Code', 'Vite', 'npm', 'Chrome DevTools'],
+  'UX/UI Skills': ['User Research', 'Wireframing', 'Prototyping', 'User Testing'],
+  'Version Control & Collaboration': ['Git', 'GitHub']
 };
 
-const localImages = ['NLTK', 'SpaCy', 'Hugging Face', 'Seaborn', 'Django']; // tools with no devicon logo
+const localImages = ['Adobe XD', 'InVision', 'Styled Components', 'Chrome DevTools', 'User Research', 'Wireframing']; // tools with no devicon logo
 
 const getIconPath = (tool) => {
   const mapping = {
-    Java: 'java',
-    R: 'r',
-    C: 'c',
-    'C#': 'csharp',
-    Python: 'python',
+    HTML5: 'html5',
+    CSS3: 'css3',
     JavaScript: 'javascript',
-    Hadoop: 'hadoop',
-    Cassandra: 'cassandra',
-    MongoDB: 'mongodb',
-    PostgreSQL: 'postgresql',
-    Keras: 'keras',
-    Pandas: 'pandas',
-    NumPy: 'numpy',
-    'Scikit-learn': 'scikitlearn',
-    Jupyter: 'jupyter',
-    Docker: 'docker',
+    TypeScript: 'typescript',
+    React: 'react',
+    'Vue.js': 'vuejs',
+    Angular: 'angularjs',
+    Figma: 'figma',
+    Sketch: 'sketch',
+    'Adobe Photoshop': 'photoshop',
+    'Adobe Illustrator': 'illustrator',
+    'Sass/SCSS': 'sass',
+    'Tailwind CSS': 'tailwindcss',
+    Bootstrap: 'bootstrap',
+    'Material-UI': 'materialui',
     Git: 'git',
-    Jenkins: 'jenkins',
-    Kubernetes: 'kubernetes',
-    Linux: 'linux',
-    Windows: 'windows8',
+    'VS Code': 'vscode',
+    Webpack: 'webpack',
+    Vite: 'vitejs',
+    npm: 'npm',
+    GitHub: 'github',
+    GitLab: 'gitlab',
     Jira: 'jira',
-    Airflow: 'apacheairflow',
-    Spring: 'spring',
-    Hibernate: 'hibernate',
-    Pytest: 'pytest',
+    Slack: 'slack',
+    Notion: 'notion',
+    Prototyping: 'figma',
+    'Design Systems': 'figma',
+    Accessibility: 'html5'
   };
 
   // If tool is in Devicon mapping
@@ -54,7 +53,7 @@ const getIconPath = (tool) => {
 
   // If tool is listed in localImages
   if (localImages.includes(tool)) {
-    const fileName = tool.toLowerCase().replace(/\s/g, '') + '.png'; // e.g. huggingface.png
+    const fileName = tool.toLowerCase().replace(/\s/g, '').replace('/', '') + '.png'; // e.g. adobexd.png
     return `/icons/${fileName}`;
   }
 

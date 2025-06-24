@@ -4,24 +4,17 @@ import "../styles/Education.css"; // Make sure this path is correct
 
 const EducationList = [
   {
-    degree: "Master of Science in Data Science",
+    degree: "Master of Science in Computer Science & Information Technology",
     institution: "Sacred Heart University, Fairfield, CT",
-    date: "Aug 2022 – Dec 2023",
-    highlights: ["GPA: 3.9/4.0"],
+    date: "Aug 2023 – Dec 2024",
+    highlights: ["GPA: 8.89/10.0"],
   },
   {
-    degree: "Bachelor of Engineering in Electrical & Electronics Engineering",
-    institution: "M. S. Ramaiah University, Bengaluru, India",
-    date: "Jun 2014 – Jul 2018",
-    highlights: ["GPA: 3.5/4.0"],
-  },
-  {
-    degree: "Diploma in Electrical & Electronics Engineering",
-    institution: "P. V. P Polytechnic, Bengaluru, India",
-    date: "Apr 2011 – May 2014",
-    highlights: ["GPA: 3.8/4.0"],
-  },
-];
+    degree: "Bachelor of Engineering in Computer Science Engineering",
+    institution: "AAR Mahaveer Engineering College, Hyderabad, India",
+    date: "Jun 2019 – Jul 2023",
+    highlights: ["GPA: 7.25/10.0"],
+  } ]
 
 const Education = () => {
   return (

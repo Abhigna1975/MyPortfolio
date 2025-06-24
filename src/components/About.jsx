@@ -3,8 +3,7 @@ import '../styles/About.css';
 
 const About = () => {
   const paragraph = [
-    "Currently working as a Senior Software Engineer at Starteryou Inc., leading the vision and strategy for a platform that connects teenagers and college students with meaningful part-time job opportunities. Oversee software development, ensuring alignment between the tech stack and business objectives. Drive continuous improvement in product offerings with a focus on scalability, performance, and security. Our tech ecosystem includes: React, Vite, Node.js, MongoDB, AWS (EC2, Docker), Secure HTTPS architecture. Previously served as a Research Assistant at Sacred Heart University, where I contributed to a 50% reduction in laboratory accidents through innovative solutions. Worked on data-driven projects using Python, R, and SQL, including: Breast cancer prediction, Sentiment analysis, COVID-19 tweet modeling. Achieved high accuracy and meaningful outcomes in all research projects."
-  ];
+    "A detail-oriented and creative professional with a Master’s degree in Computer Science & Information Technology and a strong foundation in UI/UX design, front-end development, and user-centered research. Experienced in tools like Figma, HTML, CSS, and JavaScript, with a passion for creating intuitive digital experiences. Known for delivering visually appealing and functional designs through academic projects and internships. Eager to contribute to innovative teams and grow as a UI/UX designer or front-end developer. Strong communicator and collaborative team player with a proactive mindset and adaptability in fast-paced environments. Always eager to learn, explore new technologies, and turn ideas into meaningful design solutions."];
 
   return (
     <section className="about">

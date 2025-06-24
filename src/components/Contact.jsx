@@ -28,8 +28,8 @@ const Contact = () => {
 
     try {
       const result = await emailjs.send(
-        'service_78ijelk',
-        'template_orgvmhf', // Replace this with your actual template ID from dashboard
+        'service_bq7b088',
+        'template_orgvmhf',
         {
           name: formData.fullName,
           email: formData.email,
@@ -54,85 +54,69 @@ const Contact = () => {
   return (
     <>
       {isSubmitted && (
-        <div className="top-notification" style={{
-          position: 'fixed',
-          top: '20px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          backgroundColor: '#4CAF50',
-          color: 'white',
-          padding: '15px 25px',
-          borderRadius: '5px',
-          zIndex: 1000,
-          fontWeight: 'bold'
-        }}>
+        <div className="notification success-notification">
           ✅ Your message has been sent successfully!
         </div>
       )}
       
       {error && (
-        <div className="error-notification" style={{
-          position: 'fixed',
-          top: '20px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          backgroundColor: '#ff4444',
-          color: 'white',
-          padding: '15px 25px',
-          borderRadius: '5px',
-          zIndex: 1000,
-          fontWeight: 'bold',
-          maxWidth: '80%',
-          textAlign: 'center'
-        }}>
+        <div className="notification error-notification">
           ❌ {error}
         </div>
       )}
       
       <div className="contact-wrapper">
-        <section className="contact-section" id="contact">
+        <div className="contact-container">
           <span className="contact-title-large">Contact</span>
           <span className="contact-title-small">Me</span>
           
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="fullName">Full Name</label>
-            <input 
-              type="text" 
-              id="fullName" 
-              name="fullName" 
-              placeholder="Your full name" 
-              value={formData.fullName}
-              onChange={handleInputChange}
-              required 
-            />
-            
-            <label htmlFor="email">Email Address</label>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              placeholder="Your email address" 
-              value={formData.email}
-              onChange={handleInputChange}
-              required 
-            />
-            
-            <label htmlFor="message">Message</label>
-            <textarea 
-              id="message" 
-              name="message" 
-              placeholder="Your message..." 
-              rows="5" 
-              value={formData.message}
-              onChange={handleInputChange}
-              required
-            />
-            
-            <button type="submit" disabled={isLoading}>
-              {isLoading ? 'Sending...' : 'Send'}
-            </button>
-          </form>
-        </section>
+          <div className="contact-content">
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="fullName">Full Name</label>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  placeholder="Your full name" 
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                  required 
+                />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Your email address" 
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required 
+                />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  placeholder="Your message..." 
+                  rows="5" 
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              
+              <button type="submit" className="submit-btn" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Send'}
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </>
   );
