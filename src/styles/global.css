@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* MINIMAL RESPONSIVE CODE - REPLACE YOUR GLOBAL.CSS WITH THIS */
+
+/* Only add viewport responsiveness without breaking existing layout */
+@media (max-width: 768px) {
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Hero section adjustments */
+  .hero-content, .hero-section {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 1rem !important;
+  }
+  
+  /* Skills grid - stack vertically on mobile */
+  .skills-grid, .tech-skills {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  /* Skills cards */
+  .skill-card, .tech-card {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Contact form */
+  .contact-form {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Navigation buttons */
+  .nav-links, .social-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+  
+  /* Text sizing for mobile */
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Buttons full width on mobile */
+  .btn, button {
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+  }
+}

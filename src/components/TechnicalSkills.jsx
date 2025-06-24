@@ -7,7 +7,7 @@ const skills = {
   'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
   'CSS & Styling': ['Tailwind CSS','Styled Components'],
   'Development Tools': ['Git', 'VS Code', 'Vite', 'npm', 'Chrome DevTools'],
-  'UX/UI Skills': ['User Research', 'Wireframing', 'Prototyping', 'User Testing'],
+  'UX/UI Skills': ['User Research', 'Wireframing', 'Prototyping'],
   'Version Control & Collaboration': ['Git', 'GitHub']
 };
 
