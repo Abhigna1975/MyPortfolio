@@ -11,7 +11,7 @@ const certifications = [
   {
     img: cert1,
     name: "Front End Development Libraries",
-    link: "https://freecodecamp.org/certification/abhigna_margam/front-end-development-libraries", // Update with your actual verification link
+    link: "https://freecodecamp.org/certification/abhigna_margam/front-end-development-libraries",
   },
   {
     img: cert2,
@@ -19,17 +19,17 @@ const certifications = [
     link: "#", // Update with your actual verification link
   },
   {
-    img: cert3,
+    img: cert3 || "https://via.placeholder.com/450x270/333/fff?text=Python+Data+Science", // Fallback if image missing
     name: "Python for Data Science",
     link: "#", // Update with your actual verification link
   },
   {
-    img: cert4,
+    img: cert4 || "https://via.placeholder.com/450x270/333/fff?text=Soft+Skills", // Fallback if image missing
     name: "Soft Skills Certificate",
     link: "#", // Update with your actual verification link
   },
   {
-    img: cert5,
+    img: cert5 || "https://via.placeholder.com/450x270/333/fff?text=Communication+Skills", // Fallback if image missing
     name: "Communication Skills Certificate",
     link: "#", // Update with your actual verification link
   },
