@@ -6,15 +6,23 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Hey there,</h1>
-        <h2>I'm Abhigna Margam</h2>
+        <h1>
+          <span className="color-1">Hey</span>
+          <span className="color-2"> there</span>
+          <span className="color-3">,</span>
+        </h1>
+        <h2>
+          <span className="color-1">I'm </span>
+          <span className="color-2">Abhigna</span>
+          <span className="color-3"> Margam</span>
+        </h2>
         <p>UX Designer | UI Developer</p>
         
         {/* Social Links */}
         <div className="social-links">
           <a 
-            href="https://www.linkedin.com/in/abhigna-margam-71b2a6250/" 
-            target="_blank" 
+            href="https://www.linkedin.com/in/abhigna-margam-71b2a6250/"
+            target="_blank"
             rel="noopener noreferrer"
             className="social-link"
           >
@@ -24,8 +32,8 @@ const Hero = () => {
             LinkedIn
           </a>
           <a 
-            href="https://github.com/Abhigna1975" 
-            target="_blank" 
+            href="https://github.com/Abhigna1975"
+            target="_blank"
             rel="noopener noreferrer"
             className="social-link"
           >

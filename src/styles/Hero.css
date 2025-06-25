@@ -374,3 +374,20 @@ h2:hover, p:hover {
     font-size: 0.9rem;
   }
 }
+
+/* Add these 3 color classes to your existing Hero.css file */
+
+/* Color 1 - Cyan */
+.color-1 {
+  color: #63f4fc;
+}
+
+/* Color 2 - Light Blue */
+.color-2 {
+  color: #d6fdff;
+}
+
+/* Color 3 - White */
+.color-3 {
+  color: #ffffff;
+}
