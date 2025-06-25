@@ -1,4 +1,4 @@
-/* Projects Section CSS - Updated to match your design */
+/* Projects Section CSS - Fixed empty space issues */
 .projects {
   padding: 60px 40px;
   background-color: rgb(0, 0, 0);
@@ -62,12 +62,12 @@
 
 /* Individual Project Block - Clean Layout */
 .project-block {
-  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  background: linear-gradient(145deg, #000000, #000000);
   border-radius: 20px;
   padding: 20px;
   transition: all 0.4s ease;
-  border: 1px solid rgba(99, 244, 252, 0.1);
-  min-height: 320px; /* Reduced from 400px */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 280px; /* Reduced from 320px */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -76,8 +76,8 @@
 
 .project-block:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(99, 244, 252, 0.15);
-  border-color: rgba(99, 244, 252, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Project Image Container */
@@ -86,7 +86,7 @@
   height: 180px;
   overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 15px; /* Reduced from 20px */
+  margin-bottom: 12px; /* Reduced from 15px */
 }
 
 /* Project Image */
@@ -107,6 +107,7 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start; /* Added to prevent stretching */
 }
 
 /* Project Header Info - Name and Click GIF side by side */
@@ -114,16 +115,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0; /* Removed margin to eliminate empty space */
+  margin-bottom: 0; /* Keep as 0 */
   gap: 15px;
+  min-height: auto; /* Added to prevent extra height */
 }
 
 /* Project Name */
 .project-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #ffffff;
-  margin: 0;
+  color: #63f4fc;
+  margin: 0; /* Keep margins at 0 */
   line-height: 1.3;
   flex: 1;
 }
@@ -152,8 +154,8 @@
 
 /* Project Summary - Expandable */
 .project-summary {
-  margin-top: 10px; /* Reduced from 15px */
-  padding-top: 15px; /* Reduced from 20px */
+  margin-top: 8px; /* Reduced from 10px */
+  padding-top: 12px; /* Reduced from 15px */
   border-top: 1px solid rgba(99, 244, 252, 0.2);
   animation: slideDown 0.4s ease;
 }
@@ -175,7 +177,7 @@
 .summary-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 15px 0; /* Reduced from 20px */
+  margin: 0 0 12px 0; /* Reduced from 15px */
 }
 
 /* Summary Points */
@@ -183,7 +185,7 @@
   font-size: 0.9rem;
   color: #b0b0b0;
   line-height: 1.6;
-  margin-bottom: 8px; /* Reduced from 10px */
+  margin-bottom: 6px; /* Reduced from 8px */
   padding-left: 20px;
   position: relative;
 }
@@ -254,19 +256,6 @@
   padding-top: 20px;
   border-top: 1px solid rgba(99, 244, 252, 0.2);
   animation: slideDown 0.4s ease;
-}
-
-@keyframes slideDown {
-  from { 
-    opacity: 0; 
-    transform: translateY(-20px); 
-    max-height: 0;
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-    max-height: 200px;
-  }
 }
 
 /* Project Links Container */
@@ -355,20 +344,21 @@
   }
   
   .project-block {
-    padding: 0;
-    min-height: 350px;
+    padding: 15px; /* Reduced from 20px */
+    min-height: 280px; /* Reduced from 350px */
   }
   
-  .project-header {
-    height: 150px;
+  .project-image-container {
+    height: 140px; /* Reduced from 150px */
+    margin-bottom: 10px; /* Reduced */
   }
   
   .project-info {
-    padding: 20px;
+    padding: 0; /* Removed extra padding */
   }
   
-  .project-title {
-    font-size: 1.2rem;
+  .project-name {
+    font-size: 1.1rem; /* Slightly reduced */
   }
   
   .project-tech {
@@ -380,9 +370,9 @@
   }
   
   .click-me-gif {
-    width: 30px;
-    height: 30px;
-    padding: 6px;
+    width: 25px; /* Reduced from 30px */
+    height: 25px;
+    padding: 5px;
   }
   
   /* Hide rotated titles on mobile */
@@ -405,24 +395,26 @@
 @media (max-width: 480px) {
   .projects-container {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 20px; /* Reduced from 20px */
   }
   
   .project-block {
-    min-height: 300px;
+    min-height: 260px; /* Reduced from 300px */
+    padding: 12px; /* Further reduced */
   }
   
-  .project-header {
-    height: 120px;
+  .project-image-container {
+    height: 120px; /* Further reduced */
+    margin-bottom: 8px;
   }
   
   .project-info {
-    padding: 15px;
+    padding: 0;
   }
   
   .project-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px; /* Reduced from 10px */
   }
   
   .project-link {

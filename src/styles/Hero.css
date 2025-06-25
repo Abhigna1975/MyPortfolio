@@ -105,7 +105,7 @@ body {
   padding: 1.5rem;
   background-color: #000000;
   text-align: left;
-  border: 1px solid #2b2b2b;
+  border: 1px solid #070707;
   transition: transform 0.3s ease;
   color: #fff;
   position: relative;
@@ -122,7 +122,7 @@ body {
 .title-container {
   position: absolute;
   left: -35px;
-  top: 75%;
+  top: 58%;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: center;
   white-space: nowrap;
@@ -159,8 +159,8 @@ body {
   line-height: 6;
   margin: 0;
   z-index: 1;
-  left: 10px;
-  top: 5px;
+  left: 0px;
+  top: -5px;
 }
 
 .job-title, .tagline {

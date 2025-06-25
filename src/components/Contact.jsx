@@ -75,10 +75,10 @@ const Contact = () => {
               <div className="form-group">
                 <label htmlFor="fullName">Full Name</label>
                 <input 
-                  type="text" 
-                  id="fullName" 
-                  name="fullName" 
-                  placeholder="Your full name" 
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Your full name"
                   value={formData.fullName}
                   onChange={handleInputChange}
                   required 
@@ -88,10 +88,10 @@ const Contact = () => {
               <div className="form-group">
                 <label htmlFor="email">Email Address</label>
                 <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
-                  placeholder="Your email address" 
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
                   value={formData.email}
                   onChange={handleInputChange}
                   required 
@@ -101,10 +101,10 @@ const Contact = () => {
               <div className="form-group">
                 <label htmlFor="message">Message</label>
                 <textarea 
-                  id="message" 
-                  name="message" 
-                  placeholder="Your message..." 
-                  rows="5" 
+                  id="message"
+                  name="message"
+                  placeholder="Your message..."
+                  rows="5"
                   value={formData.message}
                   onChange={handleInputChange}
                   required
@@ -117,6 +117,11 @@ const Contact = () => {
             </form>
           </div>
         </div>
+      </div>
+
+      {/* Copyright Notice */}
+      <div className="copyright-notice">
+        © 2025 Abhigna Margam. All rights reserved.
       </div>
     </>
   );
