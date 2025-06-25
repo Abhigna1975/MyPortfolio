@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import proj1 from '../assets/proj1.png';
-import proj2 from '../assets/proj2.png';
-import proj3 from '../assets/proj3.png';
-import proj4 from '../assets/proj4.png';
-import proj5 from '../assets/proj5.png';
-import proj6 from '../assets/proj6.png';
 import clickmeGif from '../assets/clickme.gif';
 import '../styles/Projects.css';
+
+// Images from public folder - use direct paths
+const proj1 = "/prj1.png";
+const proj2 = "/prj2.png";
+const proj3 = "/prj3.png";
+const proj4 = "/prj4.png";
+const proj5 = "/prj5.png";
+const proj6 = "/prj6.png";
 
 const projects = [
   {
