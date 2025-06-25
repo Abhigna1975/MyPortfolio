@@ -47,6 +47,117 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* ADDED: Shine GIF Background Animation - Full Screen Coverage */
+.App {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url('/shine.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.15;
+  animation: float 10s ease-in-out infinite;
+}
+
+/* More spread out positions across the entire screen */
+.star:nth-child(1) { top: 5%; left: 5%; animation-delay: 0s; }
+.star:nth-child(2) { top: 10%; left: 25%; animation-delay: 1s; }
+.star:nth-child(3) { top: 15%; left: 45%; animation-delay: 2s; }
+.star:nth-child(4) { top: 20%; left: 65%; animation-delay: 3s; }
+.star:nth-child(5) { top: 25%; left: 85%; animation-delay: 4s; }
+.star:nth-child(6) { top: 35%; left: 10%; animation-delay: 5s; }
+.star:nth-child(7) { top: 40%; left: 30%; animation-delay: 0.5s; }
+.star:nth-child(8) { top: 45%; left: 50%; animation-delay: 1.5s; }
+.star:nth-child(9) { top: 50%; left: 70%; animation-delay: 2.5s; }
+.star:nth-child(10) { top: 55%; left: 90%; animation-delay: 3.5s; }
+.star:nth-child(11) { top: 65%; left: 15%; animation-delay: 4.5s; }
+.star:nth-child(12) { top: 70%; left: 35%; animation-delay: 5.5s; }
+.star:nth-child(13) { top: 75%; left: 55%; animation-delay: 6s; }
+.star:nth-child(14) { top: 80%; left: 75%; animation-delay: 6.5s; }
+.star:nth-child(15) { top: 85%; left: 95%; animation-delay: 7s; }
+.star:nth-child(16) { top: 30%; left: 20%; animation-delay: 7.5s; }
+.star:nth-child(17) { top: 60%; left: 40%; animation-delay: 0.2s; }
+.star:nth-child(18) { top: 90%; left: 60%; animation-delay: 1.2s; }
+.star:nth-child(19) { top: 12%; left: 80%; animation-delay: 2.2s; }
+.star:nth-child(20) { top: 88%; left: 8%; animation-delay: 3.2s; }
+.star:nth-child(21) { top: 2%; left: 40%; animation-delay: 4.2s; }
+.star:nth-child(22) { top: 18%; left: 15%; animation-delay: 5.2s; }
+.star:nth-child(23) { top: 38%; left: 75%; animation-delay: 6.2s; }
+.star:nth-child(24) { top: 58%; left: 25%; animation-delay: 7.2s; }
+.star:nth-child(25) { top: 78%; left: 45%; animation-delay: 8s; }
+.star:nth-child(26) { top: 95%; left: 85%; animation-delay: 8.5s; }
+.star:nth-child(27) { top: 8%; left: 95%; animation-delay: 9s; }
+.star:nth-child(28) { top: 28%; left: 5%; animation-delay: 9.5s; }
+.star:nth-child(29) { top: 48%; left: 95%; animation-delay: 0.8s; }
+.star:nth-child(30) { top: 68%; left: 5%; animation-delay: 1.8s; }
+.star:nth-child(31) { top: 33%; left: 60%; animation-delay: 2.8s; }
+.star:nth-child(32) { top: 53%; left: 35%; animation-delay: 3.8s; }
+.star:nth-child(33) { top: 73%; left: 80%; animation-delay: 4.8s; }
+.star:nth-child(34) { top: 93%; left: 30%; animation-delay: 5.8s; }
+.star:nth-child(35) { top: 7%; left: 70%; animation-delay: 6.8s; }
+.star:nth-child(36) { top: 27%; left: 90%; animation-delay: 7.8s; }
+.star:nth-child(37) { top: 47%; left: 12%; animation-delay: 8.8s; }
+.star:nth-child(38) { top: 67%; left: 88%; animation-delay: 0.3s; }
+.star:nth-child(39) { top: 87%; left: 50%; animation-delay: 1.3s; }
+.star:nth-child(40) { top: 17%; left: 32%; animation-delay: 2.3s; }
+.star:nth-child(41) { top: 37%; left: 68%; animation-delay: 3.3s; }
+.star:nth-child(42) { top: 57%; left: 18%; animation-delay: 4.3s; }
+.star:nth-child(43) { top: 77%; left: 92%; animation-delay: 5.3s; }
+.star:nth-child(44) { top: 97%; left: 22%; animation-delay: 6.3s; }
+.star:nth-child(45) { top: 3%; left: 58%; animation-delay: 7.3s; }
+.star:nth-child(46) { top: 23%; left: 82%; animation-delay: 8.3s; }
+.star:nth-child(47) { top: 43%; left: 28%; animation-delay: 9.3s; }
+.star:nth-child(48) { top: 63%; left: 78%; animation-delay: 0.6s; }
+.star:nth-child(49) { top: 83%; left: 38%; animation-delay: 1.6s; }
+.star:nth-child(50) { top: 13%; left: 88%; animation-delay: 2.6s; }
+
+/* Floating animation for shine particles */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(0.8);
+    opacity: 0.05;
+  }
+  25% {
+    transform: translateY(-15px) scale(1);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translateY(-30px) scale(0.9);
+    opacity: 0.08;
+  }
+  75% {
+    transform: translateY(-15px) scale(1.1);
+    opacity: 0.15;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
 /* Logo styles - keeping your existing logo animations */
 .logo {
   height: 6em;
