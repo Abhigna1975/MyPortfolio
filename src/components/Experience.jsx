@@ -13,7 +13,7 @@ const Experiences = [
       "I specialize in creating intuitive, visually appealing interfaces using tools like Figma, HTML, CSS, and JavaScript.",
       "At StarterYou, I collaborate with cross-functional teams to design solutions that simplify user journeys and enhance engagement.",
       "My approach combines design thinking, usability research, and attention to detail to deliver impactful, accessible products.",
-         ],
+    ],
   },
   {
     title: "Classroom Teaching Assistant",
@@ -76,17 +76,7 @@ const Experience = () => {
               </div>
               <p>{exp.date}</p>
             </div>
-            {expandedIndexes.includes(index) && (
-              <div
-                className="toggle-summary"
-                onClick={() => toggleExpand(index)}
-                style={{ cursor: "pointer", marginBottom: "10px" }}
-              >
-                <span className="toggle-arrow">
-                  <FaChevronUp /> Hide Summary
-                </span>
-              </div>
-            )}
+            
             {expandedIndexes.includes(index) && (
               <div className="experience-details">
                 <h4>{exp.company}</h4>
@@ -95,6 +85,12 @@ const Experience = () => {
                     <li key={i}>{point}</li>
                   ))}
                 </ul>
+                <button 
+                  className="minimize-experience-btn"
+                  onClick={() => toggleExpand(index)}
+                >
+                  Minimize
+                </button>
               </div>
             )}
           </div>

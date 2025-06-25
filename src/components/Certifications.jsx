@@ -104,21 +104,22 @@ const Certifications = () => {
         </div>
       </div>
 
-      {/* Large Image Modal */}
+      {/* Large Image Modal - FIXED VERSION */}
       {showLargeImage && (
         <div className="certificate-modal" onClick={toggleLargeImage}>
-          <div className="certificate-modal-content">
+          <div className="certificate-modal-content" onClick={(e) => e.stopPropagation()}>
             <img
               src={certifications[currentIndex].img}
               alt={certifications[currentIndex].name}
               className="certificate-large-image"
             />
             <div className="certificate-modal-close">
-              <img
-                src={clickmeGif}
-                alt="Click to close"
-                className="clickme-gif-close"
-              />
+              <button 
+                className="minimize-certificate-btn"
+                onClick={toggleLargeImage}
+              >
+                Minimize
+              </button>
             </div>
           </div>
         </div>
