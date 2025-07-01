@@ -391,3 +391,366 @@ h2:hover, p:hover {
 .color-3 {
   color: #ffffff;
 }
+
+/* Resume Modal Styles - Add this to your Hero.css file */
+
+.resume-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.resume-modal {
+  background: linear-gradient(135deg, #6c6c6c 0%, #2a2a2a 50%, #707070 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.resume-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.resume-modal-header h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.close-modal {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.close-modal:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.resume-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resume-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+}
+
+.open-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: 2px solid transparent;
+}
+
+.open-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn {
+  background: #000000;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.download-btn:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.resume-option-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Responsive adjustments for the modal */
+@media (max-width: 480px) {
+  .resume-modal {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .resume-modal-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .resume-option-btn {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    min-height: 50px;
+  }
+}
+
+/* Updated Close Modal Button Styles */
+.close-modal {
+  background: transparent;
+  border: none;
+  width: 24px;          /* Reduced from 30px */
+  height: 24px;         /* Reduced from 30px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  padding: 0;
+  flex-shrink: 0;
+  margin-left: 8px;     /* Add small margin for spacing */
+}
+
+.close-modal:hover {
+  color: #ffffff;
+  transform: scale(1.1);  /* Reduced from 1.2 for subtler effect */
+}
+
+.close-modal svg {
+  width: 18px;            /* Reduced from 24px */
+  height: 18px;           /* Reduced from 24px */
+}
+
+/* Also update the modal header to ensure proper alignment */
+.resume-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;           /* Add gap for consistent spacing */
+}
+
+.resume-modal-header h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  flex: 1;
+  white-space: nowrap;    /* Prevent text wrapping */
+  overflow: hidden;       /* Hide overflow if needed */
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+
+/* Mobile spacing for slogan boxes - add this to your Hero.css */
+
+/* Default desktop styles remain unchanged */
+.job-title, .tagline {
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  font-weight: medium;
+  color: #fff;
+  margin-left: 80px;
+  line-height: 1.2;
+}
+
+/* Mobile spacing for slogan boxes - add this to your Hero.css */
+
+/* Default desktop styles remain unchanged */
+.job-title, .tagline {
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  font-weight: medium;
+  color: #fff;
+  margin-left: 80px;
+  line-height: 1.2;
+}
+
+/* Mobile-specific spacing adjustments */
+@media (max-width: 768px) {
+  .job-title, .tagline {
+    margin-left: 70px; /* Move content more to the right */
+  }
+  
+  .slogan-box {
+    min-width: 100%;
+    max-width: 100%;
+    height: 180px;
+  }
+  
+  .title-container {
+    left: -25px;
+    top: 75%; /* Move titles down */
+  }
+}
+
+@media (max-width: 480px) {
+  .job-title, .tagline {
+    margin-left: 60px; /* Move content more to the right on smaller screens */
+    font-size: 1.2rem;
+  }
+  
+  .slogan-box {
+    height: 160px;
+    padding: 1rem;
+  }
+  
+  .title-container {
+    left: -20px;
+    top: 65%; /* Move titles down */
+  }
+}
+
+/* Enhanced PDF Modal Styles - Add to your Hero.css */
+
+.resume-modal-large {
+  background: linear-gradient(135deg, #6c6c6c 0%, #2a2a2a 50%, #707070 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 90vw;
+  width: 900px;
+  max-height: 95vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+.pdf-viewer-container {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.resume-modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.resume-modal-actions .resume-option-btn {
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Mobile adjustments for the large modal */
+@media (max-width: 768px) {
+  .resume-modal-large {
+    width: 95vw;
+    max-width: 95vw;
+    padding: 1rem;
+    max-height: 90vh;
+  }
+  
+  .pdf-viewer-container iframe {
+    height: 500px !important;
+  }
+  
+  .resume-modal-actions {
+    flex-direction: column;
+  }
+  
+  .resume-modal-actions .resume-option-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-modal-large {
+    width: 98vw;
+    padding: 0.8rem;
+  }
+  
+  .pdf-viewer-container iframe {
+    height: 400px !important;
+  }
+  
+  .resume-modal-header h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Alternative: If iframe doesn't work well, here's an object-based approach */
+.pdf-object-container {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  height: 600px;
+}
+
+.pdf-object-container object {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Fallback for browsers that don't support PDF embedding */
+.pdf-fallback {
+  text-align: center;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  color: #333;
+}
+
+.pdf-fallback p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.pdf-fallback button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pdf-fallback button:hover {
+  background: #0056b3;
+}

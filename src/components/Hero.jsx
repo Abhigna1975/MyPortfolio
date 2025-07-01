@@ -1,8 +1,51 @@
 // src/components/Hero.jsx
+import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import ProfileImage from '../assets/Profile.jpg';
+import ResumePDF from '../assets/Resume.pdf';
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const handleResumeClick = (e) => {
+    if (isMobile) {
+      e.preventDefault();
+      setShowResumeModal(true);
+    }
+    // For desktop, let the default behavior (opening in new tab) work
+  };
+
+  const handleOpenPDF = () => {
+    window.open(ResumePDF, '_blank');
+    setShowResumeModal(false);
+  };
+
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = ResumePDF;
+    link.download = 'Abhigna_Margam_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setShowResumeModal(false);
+  };
+  
+
+  const closeModal = () => {
+    setShowResumeModal(false);
+  };
   return (
     <section className="hero">
       <div className="hero-content">
@@ -42,6 +85,18 @@ const Hero = () => {
             </svg>
             GitHub
           </a>
+          <a 
+            href={ResumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+            onClick={handleResumeClick}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+            </svg>
+            {isMobile ? 'Resume' : 'Resume'}
+          </a>
         </div>
         
         {/* Slogan content */}
@@ -75,6 +130,36 @@ const Hero = () => {
       
       {/* Profile image beside all content, starting from "Hey there" */}
       <img src={ProfileImage} alt="Abhigna Margam" className="profile-image" />
+
+      {/* Resume Modal for Mobile */}
+      {showResumeModal && (
+        <div className="resume-modal-overlay" onClick={closeModal}>
+          <div className="resume-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="resume-modal-header">
+              <h3>My Resume</h3>
+              <button className="close-modal" onClick={closeModal}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                </svg>
+              </button>
+            </div>
+            <div className="resume-modal-content">
+              <button className="resume-option-btn open-btn" onClick={handleOpenPDF}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                </svg>
+                OPEN RESUME PDF
+              </button>
+              <button className="resume-option-btn download-btn" onClick={handleDownloadPDF}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/>
+                </svg>
+                DOWNLOAD PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
