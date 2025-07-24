@@ -1,27 +1,29 @@
-/* src/styles/Contact.css */
+/* src/styles/Contact.css - Compact Version */
 
 .contact-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem; /* Reduced from 2rem */
   box-sizing: border-box;
+  margin-top: 2rem; /* Added for spacing from Technical Skills */
+  padding-top: 3rem;
 }
 
 .contact-container {
   background-color: #000000;
   color: #000000;
-  padding: 4rem 2rem;
+  padding: 2.5rem 3rem; /* Increased horizontal padding */
   text-align: left;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px; /* Increased from 700px */
   height: auto;
-  min-height: 650px;
+  min-height: 450px; /* Reduced from 650px */
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   box-sizing: border-box;
-  position:  relative;
+  position: relative;
 }
 
 /* Large title (Contact) - positioned on the left */
@@ -37,8 +39,8 @@
   line-height: 1;
   margin: 0;
   z-index: 2;
-  left: -120px;
-  top: 250px;
+  left: -70px; /* Moved further left to accommodate wider container */
+  top: 200px; /* Reduced from 250px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
   white-space: nowrap;
@@ -54,8 +56,8 @@
   line-height: 1;
   margin: 0;
   z-index: 1;
-  left: -5px;
-  top: 270px;
+  left: 45px; /* Moved further left */
+  top: 200px; /* Reduced from 270px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
   white-space: nowrap;
@@ -63,14 +65,14 @@
 
 .contact-content {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px; /* Increased from 500px */
   margin: 0 auto;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem; /* Reduced from 1.5rem */
   text-align: left;
   width: 100%;
 }
@@ -78,17 +80,17 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem; /* Reduced from 0.5rem */
 }
 
 .contact-form label {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Reduced from 1.2rem */
   color: #63f4fc;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 1rem; /* Reduced from 0.8rem */
   font-size: 1rem;
   border: 0.2px solid #1c1c1c;
   border-radius: 6px;
@@ -97,6 +99,11 @@
   resize: vertical;
   width: 100%;
   box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 80px; /* Set specific height for textarea */
+  max-height: 120px; /* Limit maximum height */
 }
 
 .contact-form input::placeholder,
@@ -108,7 +115,7 @@
   background-color: #63f4fc;
   color: #000000;
   border: none;
-  padding: 0.8rem 1.2rem;
+  padding: 0.7rem 1.2rem; /* Reduced from 0.8rem */
   font-size: 1rem;
   font-weight: bold;
   border-radius: 6px;
@@ -116,6 +123,7 @@
   transition: background 0.3s ease;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 0.5rem; /* Added small top margin */
 }
 
 .submit-btn:hover {
@@ -155,13 +163,35 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .contact-container {
+    min-height: 400px; /* Further reduced for tablets */
+    padding: 2rem 2.5rem; /* Adjusted padding for tablets */
+    max-width: 900px; /* Slightly reduced for tablets */
+  }
+  
+  .contact-content {
+    max-width: 600px; /* Adjusted for tablets */
+  }
+  
+  .contact-title-large {
+    top: 160px; /* Adjusted position */
+    left: -130px; /* Adjusted for tablet width */
+  }
+  
+  .contact-title-small {
+    top: 180px; /* Adjusted position */
+    left: -20px; /* Adjusted for tablet width */
+  }
+}
+
 @media (max-width: 768px) {
   .contact-wrapper {
-    padding: 1rem;
+    padding: 0.5rem; /* Further reduced for mobile */
   }
 
   .contact-container {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem; /* Further reduced padding */
     min-height: auto;
     max-width: 100%;
   }
@@ -178,11 +208,15 @@
   .contact-container::before {
     content: "Contact Me";
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Slightly reduced */
     font-weight: bold;
     color: #63f4fc;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Reduced from 2rem */
+  }
+  
+  .contact-form {
+    gap: 1rem; /* Reduced gap for mobile */
   }
 }
 
@@ -192,29 +226,35 @@
   }
   
   .contact-container {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 0.8rem; /* Further reduced */
   }
   
   .contact-container::before {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Further reduced */
+    margin-bottom: 1.2rem;
+  }
+  
+  .contact-form {
+    gap: 0.8rem; /* Even smaller gap */
+  }
+  
+  .form-group {
+    gap: 0.3rem;
   }
 }
 
-/* Add this to your Contact.css file */
-
-/* Copyright Notice Styling */
+/* Copyright Notice Styling - Compact Version */
 .copyright-notice {
   text-align: center;
-  padding: 15px 20px; /* Reduced from 30px to 15px */
-  margin-top: -10px; /* Reduced from 40px to 15px */
+  padding: 30px 15px; /* Increased padding */
+  margin-top: 80px; /* Significantly increased from 40px to 80px */
   background-color: #000000;
   color: #888888;
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Slightly reduced */
   border-top: 1px solid #2b2b2b;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
-
 
 .copyright-notice:hover {
   color: #63f4fc;
@@ -224,8 +264,8 @@
 /* Make it responsive */
 @media (max-width: 768px) {
   .copyright-notice {
-    font-size: 0.8rem;
-    padding: 10px 15px; /* Reduced from 20px to 10px */
-    margin-top: 10px; /* Reduced from 20px to 10px */
+    font-size: 0.75rem; /* Further reduced */
+    padding: 25px 12px; /* Increased padding */
+    margin-top: 60px; /* Increased from 30px to 60px */
   }
 }
