@@ -3,7 +3,7 @@ import '../styles/About.css';
 
 const About = () => {
   const paragraph = [
-    "A detail-oriented and creative professional with a Master’s degree in Computer Science & Information Technology and a strong foundation in UI/UX design, front-end development, and user-centered research. Experienced in tools like Figma, HTML, CSS, and JavaScript, with a passion for creating intuitive digital experiences. Known for delivering visually appealing and functional designs through academic projects and internships. Eager to contribute to innovative teams and grow as a UI/UX designer or front-end developer. Strong communicator and collaborative team player with a proactive mindset and adaptability in fast-paced environments. Always eager to learn, explore new technologies, and turn ideas into meaningful design solutions."];
+    "A detail-oriented and creative professional with a Master’s degree in Computer Science & Information Technology and expertise in both design and development. Currently working as a UI/UX Developer at Stateryou, combining user-centered design principles with front-end development skills to create intuitive and visually appealing digital experiences. Proficient in tools like Figma, HTML, CSS, JavaScript, and React, I deliver designs that are both aesthetically engaging and functionally robust. Known for problem-solving, collaboration, and adaptability in fast-paced environments, I thrive on transforming ideas into impactful, user-friendly solutions."];
 
   return (
     <section className="about">

@@ -59,7 +59,7 @@ const Hero = () => {
           <span className="color-2">Abhigna</span>
           <span className="color-3"> Margam</span>
         </h2>
-        <p>UX Designer | UI Developer</p>
+        <p>UI/UX Developer | Front-End Developer</p>
         
         {/* Social Links */}
         <div className="social-links">
