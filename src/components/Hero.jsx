@@ -107,8 +107,7 @@ const Hero = () => {
               <span className="title-small">Position</span>
             </div>
             <div className="job-title">
-              <div>Front</div>
-              <div>End</div>
+              <div>Front-End</div>
               <div>Developer</div>
             </div>
           </div>
@@ -119,10 +118,8 @@ const Hero = () => {
               <span className="title-small">Slogan</span>
             </div>
             <div className="tagline">
-              <div>If things</div>
-              <div>are working</div>
-              <div>well,</div>
-              <div>don't disturb!</div>
+              <div>Where creativity</div>
+              <div>meets code.</div>
             </div>
           </div>
         </div>

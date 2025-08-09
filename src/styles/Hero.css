@@ -133,8 +133,8 @@ body {
 /* Large title (positioned on top) */
 .title-large {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 30px;
   font-size: clamp(3rem, 4vw, 4.5rem);
   font-weight: bold;
   color: #fff;
@@ -159,7 +159,7 @@ body {
   line-height: 6;
   margin: 0;
   z-index: 1;
-  left: 0px;
+  left: 30px;
   top: -5px;
 }
 
