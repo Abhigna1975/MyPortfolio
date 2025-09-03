@@ -118,8 +118,8 @@ const Hero = () => {
               <span className="title-small">Slogan</span>
             </div>
             <div className="tagline">
-              <div>Where creativity</div>
-              <div>meets code.</div>
+              <div>Where pixels</div>
+              <div>meet profits</div>
             </div>
           </div>
         </div>
