@@ -5,15 +5,16 @@ import clickMeGif from "../assets/clickme.gif"; // Import your GIF
 
 const Experiences = [
   {
-    title: "UI/UX Developer",
+    title: "UI/UX Designer",
     company: "Starteryou Inc., New York, NY (Remote)",
     date: "07 Feb 2025 – Present",
     points: [
-      "Promoted from UX Designer to UI/UX Developer for exceptional performance in merging design creativity with front-end development skills.",
-      " Designed and developed user-friendly interfaces using Figma, HTML, CSS, JavaScript, and React.",
-      "Collaborated with cross-functional teams to ensure seamless integration of design and functionality.",
-      "Conducted usability testing and implemented feedback to enhance user satisfaction.",
-    ],
+  "Working as UI/UX Designer at Starteryou, contributing design expertise while also supporting the marketing team with creative assets.",
+  "Designed user-friendly interfaces and marketing materials using Figma, Adobe Creative Suite, and other design tools.",
+  "Collaborated with marketing teams to create cohesive brand experiences and promotional materials that drive engagement.",
+  "Conducted usability testing and implemented feedback to enhance user satisfaction and design effectiveness.",
+  "Created digital marketing assets, social media graphics, and promotional materials that align with brand guidelines and marketing objectives."
+],
   },
   {
     title: "Classroom Teaching Assistant",
