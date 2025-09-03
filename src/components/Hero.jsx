@@ -119,7 +119,7 @@ const Hero = () => {
             </div>
             <div className="tagline">
               <div>Where pixels</div>
-              <div>meet profits</div>
+              <div>meet profits.</div>
             </div>
           </div>
         </div>
