@@ -59,7 +59,7 @@ const Hero = () => {
           <span className="color-2">Abhigna</span>
           <span className="color-3"> Margam</span>
         </h2>
-        <p>UI/UX Designer | Front-End Developer</p>
+        <p>UI/UX Designer | Graphic Designer</p>
         
         {/* Social Links */}
         <div className="social-links">
@@ -107,8 +107,8 @@ const Hero = () => {
               <span className="title-small">Position</span>
             </div>
             <div className="job-title">
-              <div>Front-End</div>
-              <div>Developer</div>
+              <div>Web</div>
+              <div>Designer</div>
             </div>
           </div>
           

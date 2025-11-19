@@ -7,10 +7,23 @@ const proj1 = "/prj1.png";
 const proj2 = "/prj2.png";
 const proj3 = "/prj3.png";
 const proj4 = "/prj4.png";
-const proj5 = "/prj5.png";
-const proj6 = "/prj6.png";
+
 
 const projects = [
+  {
+    img: proj4,
+    name: "Portfolio Website for Fullstack Developer",
+    summary: [
+      "Modern Glassmorphism Design with Gradient Aesthetics",
+      "Designed and developed responsive portfolio site using React",
+      "Implemented glassmorphism UI with frosted-glass card effects",
+      "Created vibrant gradient backgrounds (coral pink to sky blue)",
+      "Built interactive components with smooth hover animations",
+      "Integrated professional sections: position, slogan, contact, resume",
+      "Optimized for all devices with mobile-first responsive design",
+      "Applied modern CSS3 techniques for visual appeal and performance"
+    ]
+  },
   {
     img: proj1,
     name: "E-Commerce Website",
@@ -25,64 +38,16 @@ const projects = [
   },
   {
     img: proj2,
-    name: "Weather Application",
+   name: "Art Gallery Management System",
     summary: [
-      "Real-time weather data using OpenWeather API",
-      "Location-based weather forecasts and current conditions",
-      "Interactive weather maps and visual representations",
-      "5-day weather forecast with hourly breakdowns",
-      "Responsive design with beautiful weather animations",
-      "Built with React and integrated third-party APIs"
+      "Developed a UI for organizing and displaying gallery artworks",
+      "Created a user signup and authentication system",
+      "Built a visual catalog to showcase museum art collections",
+      "Designed an intuitive interface for browsing artworks",
+      "Implemented responsive design for cross-device accessibility"
     ]
   },
-  {
-    img: proj3,
-    name: "Task Management System",
-    summary: [
-      "Drag and drop functionality for task organization",
-      "Multiple project boards with different categories",
-      "Real-time collaboration features for team members",
-      "Progress tracking with visual charts and analytics",
-      "Deadline reminders and notification system",
-      "Built using React with localStorage for data persistence"
-    ]
-  },
-  {
-    img: proj4,
-    name: "Portfolio Website",
-    summary: [
-      "Modern responsive design showcasing projects and skills",
-      "Interactive animations and smooth scrolling effects",
-      "Contact form with email integration functionality",
-      "Optimized for SEO and fast loading performance",
-      "Mobile-first design approach for all screen sizes",
-      "Built with React and deployed on Vercel platform"
-    ]
-  },
-  {
-    img: proj5,
-    name: "Blog Platform",
-    summary: [
-      "Content management system with rich text editor",
-      "User authentication and authorization system",
-      "Comment system with moderation capabilities",
-      "Search functionality with advanced filtering options",
-      "Admin panel for content and user management",
-      "Built with React, Express.js, and MySQL database"
-    ]
-  },
-  {
-    img: proj6,
-    name: "Social Media Dashboard",
-    summary: [
-      "Real-time data visualization from multiple social platforms",
-      "Analytics tracking with interactive charts and graphs",
-      "Automated posting scheduler for multiple accounts",
-      "Engagement metrics and performance insights",
-      "Responsive dashboard with customizable widgets",
-      "Integrated with Firebase for real-time data sync"
-    ]
-  }
+  
 ];
 
 const Projects = () => {

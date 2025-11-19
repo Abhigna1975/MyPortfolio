@@ -3,10 +3,10 @@ import React from 'react';
 import '../styles/TechnicalSkills.css';
 
 const skills = {
-  'Frontend Technologies': ['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind CSS', 'Styled Components'],
-  'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
+  'Frontend Technologies': ['HTML5', 'CSS3', 'JavaScript', 'React', 'Styled Components'],
+  'Design Tools': ['Figma', 'Canva', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
   'CSS & Styling': ['Tailwind CSS', 'Styled Components'],
-  'Development Tools': ['Git', 'VS Code', 'Vite', 'npm', 'Chrome DevTools'],
+  'Development Tools': ['VS Code', 'Vite', 'npm', 'Chrome DevTools'],
   'UX/UI Skills': ['User Research', 'Wireframing', 'Prototyping'],
   'Version Control & Collaboration': ['Git', 'GitHub'],
 };
@@ -23,6 +23,18 @@ const getIconPath = (tool) => {
     
     // Design Tools
     Figma: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+    Canva: `data:image/svg+xml;base64,${btoa(`
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="canva-logo-grad-unique" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00C4CC;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#7D2AE8;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <circle cx="12" cy="12" r="10" fill="url(#canva-logo-grad-unique)"/>
+        <path d="M12 6C8.69 6 6 8.69 6 12c0 2.76 1.88 5.08 4.43 5.76v-3.01c-1.02-.46-1.73-1.48-1.73-2.68 0-1.62 1.31-2.93 2.93-2.93.81 0 1.54.33 2.07.86l1.77-1.77C14.54 6.79 13.33 6 12 6z" fill="white"/>
+      </svg>
+    `)}`,
     Sketch: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg',
     'Adobe Photoshop': `data:image/svg+xml;base64,${btoa(`
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

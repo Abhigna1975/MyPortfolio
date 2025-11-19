@@ -3,8 +3,9 @@ import '../styles/About.css';
 
 const About = () => {
   const paragraph = [
-  "A detail-oriented and creative professional with a Master's degree in Computer Science & Information Technology and expertise in design and marketing. Currently working as a UI/UX Designer at Starteryou, where I apply user-centered design principles and support the marketing team with creative assets. I specialize in creating intuitive digital experiences and compelling marketing materials that drive engagement. Proficient in design tools like Figma, Adobe Creative Suite, and Photoshop, I deliver designs that are both aesthetically engaging and strategically effective. Known for problem-solving, cross-functional collaboration, and adaptability in fast-paced environments, I thrive on transforming business ideas into impactful, user-friendly visual solutions."
-]
+    "A UI/UX designer at Starteryou handling everything design related - mobile app, web interfaces, and marketing materials from social media graphics to flyers. I create user-centered digital experiences while keeping brand consistency across all touchpoints. Proficient in Figma, Canva, Adobe Creative Suite, and Photoshop. ", "What sets me apart: you get a UI/UX designer who can seamlessly handle graphic design needs too."
+  ];
+  
   return (
     <section className="about">
       <div className="about-content">

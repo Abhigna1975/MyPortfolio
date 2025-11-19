@@ -6,39 +6,41 @@ import clickMeGif from "../assets/clickme.gif"; // Import your GIF
 const Experiences = [
   {
     title: "UI/UX Designer",
-    company: "Starteryou Inc., New York, NY (Remote)",
-    date: "07 Feb 2025 – Present",
+    company: "Starteryou Inc., New York, NY",
+    date: "Feb 2025 – Present",
     points: [
-  "Working as UI/UX Designer at Starteryou, contributing design expertise while also supporting the marketing team with creative assets.",
-  "Designed user-friendly interfaces and marketing materials using Figma, Adobe Creative Suite, and other design tools.",
-  "Collaborated with marketing teams to create cohesive brand experiences and promotional materials that drive engagement.",
-  "Conducted usability testing and implemented feedback to enhance user satisfaction and design effectiveness.",
-  "Created digital marketing assets, social media graphics, and promotional materials that align with brand guidelines and marketing objectives."
+  "Handle all design needs for the startup - mobile app interfaces, web design, social media graphics, flyers and brand assets",
+  "Design user-centered mobile and web experiences using Figma and Canva",
+  "Maintain brand consistency across digital products and marketing materials",
+  "Conduct usability testing and iterate based on user feedback to improve product experience",
+  "Collaborate with cross-functional teams including developers and marketing to deliver cohesive solutions"
 ],
   },
   {
     title: "Classroom Teaching Assistant",
     company: "Sacred Heart University, Fairfield, CT",
-    date: "01 May 2024 - 30 Jun 2024",
+    date: "Sep 2023 - Dec 2024",
     points: [
-      "Assisted faculty in delivering course content and managing classroom activities for undergraduate students.",
-      "Supported students with understanding complex technical concepts in Computer Science & IT subjects.",
-      "Facilitated group discussions, hands-on labs, and one-on-one academic support sessions.",
-      "Helped prepare teaching materials and set up classroom resources for interactive learning.",
-      "Fostered a positive and inclusive learning environment that encouraged student engagement.",
-      "Communicated regularly with faculty to align on lesson goals and student progress.",
+      "Assisted instructors with course planning and student engagement",
+      "Led tutoring sessions and explained technical concepts clearly",
+      "Provided constructive and helpful feedback to support student learning",
+      "Encouraged collaboration and built a strong learning environment",
     ],
   },
   {
-    title: "Cloud Application Developer",
-    company: "Smart Bridge, Hyderabad, India",
-    date: "01 Sep 2022 - 30 Oct 2022",
+    title: "Web Designer",
+    company: "Smart Bridge, India",
+    date: "Sep 2020 - Aug 2023",
     points: [
-      "Developed web scraping techniques using Beautiful Soup.",
-      "Performed data analysis and visualization using Python libraries.",
-      "Uncovered competitor strategies and market dynamics.",
-      "Predicted customer buying behavior using ML (85% accuracy).",
-      "Empowered marketing strategy and business optimization.",
+      "Designed and developed interactive websites using HTML, CSS, and JavaScript",
+
+      "Created responsive web layouts and user interfaces for various client projects",
+
+      "Collaborated with team members to deliver functional and visually appealing websites",
+
+      "Implemented modern design principles and ensured cross-browser compatibility",
+
+      "Focused on user experience and interface optimization"
     ],
   },
 ];
