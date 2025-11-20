@@ -9,7 +9,7 @@ const proj3 = "/prj3.png";
 const proj4 = "/prj4.png";
 
 
-  const projects = [
+const projects = [
   {
     img: proj4,
     name: "Portfolio Website for Fullstack Developer",
@@ -42,7 +42,7 @@ const proj4 = "/prj4.png";
   },
   {
     img: proj2,
-   name: "Art Gallery Management System",
+    name: "Art Gallery Management System",
     liveUrl: "https://abhigna1975.github.io/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT/index.html",
     codeUrl: "https://github.com/Abhigna1975/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT",
     summary: [
@@ -96,6 +96,25 @@ const Projects = () => {
                     onClick={() => toggleProject(index)}
                   />
                 )}
+              </div>
+              
+              <div className="project-buttons">
+                <a 
+                  href={project.liveUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-btn live-btn"
+                >
+                  View Live
+                </a>
+                <a 
+                  href={project.codeUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-btn code-btn"
+                >
+                  View Code
+                </a>
               </div>
               
               {expandedProjects[index] && (
