@@ -9,10 +9,12 @@ const proj3 = "/prj3.png";
 const proj4 = "/prj4.png";
 
 
-const projects = [
+  const projects = [
   {
     img: proj4,
     name: "Portfolio Website for Fullstack Developer",
+    liveUrl: "https://nikshepkulli.com/",
+    codeUrl: "https://github.com/nikshepkulli/My-Portfolio.git",
     summary: [
       "Modern Glassmorphism Design with Gradient Aesthetics",
       "Designed and developed responsive portfolio site using React",
@@ -27,6 +29,8 @@ const projects = [
   {
     img: proj1,
     name: "E-Commerce Website",
+    liveUrl: "https://popnwrap.vercel.app/",
+    codeUrl: "https://github.com/Abhigna1975/Popnwrap.git",
     summary: [
       "Built a full-stack e-commerce platform with user authentication",
       "Implemented shopping cart functionality with local storage",
@@ -39,6 +43,8 @@ const projects = [
   {
     img: proj2,
    name: "Art Gallery Management System",
+    liveUrl: "https://abhigna1975.github.io/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT/index.html",
+    codeUrl: "https://github.com/Abhigna1975/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT",
     summary: [
       "Developed a UI for organizing and displaying gallery artworks",
       "Created a user signup and authentication system",
@@ -47,8 +53,8 @@ const projects = [
       "Implemented responsive design for cross-device accessibility"
     ]
   },
-  
 ];
+
 
 const Projects = () => {
   const [expandedProjects, setExpandedProjects] = useState({});
