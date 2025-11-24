@@ -3,6 +3,11 @@ import "../styles/Experience.css"; // Ensure path is correct
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import clickMeGif from "../assets/clickme.gif"; // Import your GIF
 
+const Experience = ({ activeTab }) => {
+  if (activeTab !== 'home') return null;
+  
+  // rest of your code...
+
 const Experiences = [
   {
     title: "UI/UX Designer",
@@ -89,10 +94,10 @@ const Experience = () => {
                   ))}
                 </ul>
                 <button 
-                  className="minimize-experience-btn"
-                  onClick={() => toggleExpand(index)}
+                    className="HideSummary-experience-btn"
+                    onClick={() => toggleExpand(index)}
                 >
-                  Minimize
+                  Hide Summary
                 </button>
               </div>
             )}
@@ -101,6 +106,7 @@ const Experience = () => {
       </div>
     </div>
   );
+};
 };
 
 export default Experience;

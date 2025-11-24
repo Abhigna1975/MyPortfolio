@@ -2,6 +2,11 @@
 import React from 'react';
 import '../styles/TechnicalSkills.css';
 
+const TechnicalSkills = ({ activeTab }) => {
+  if (activeTab !== 'home') return null;
+  
+  // rest of your code...
+
 const skills = {
   'Frontend Technologies': ['HTML5', 'CSS3', 'JavaScript', 'React', 'Styled Components'],
   'Design Tools': ['Figma', 'Canva', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
@@ -166,6 +171,7 @@ const TechnicalSkills = () => {
       </div>
     </section>
   );
+};
 };
 
 export default TechnicalSkills;

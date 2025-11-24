@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import clickmeGif from '../assets/clickme.gif';
 import '../styles/Projects.css';
 
+const Projects = ({ activeTab }) => {
+  if (activeTab !== 'home') return null;
+  
+  // rest of your code...
+
 // Images from public folder - use direct paths
 const proj1 = "/prj1.png";
 const proj2 = "/prj2.png";
@@ -28,7 +33,7 @@ const projects = [
   },
   {
     img: proj1,
-    name: "E-Commerce Website",
+    name: "E-Commerce Website [POPNWRAP]",
     liveUrl: "https://popnwrap.vercel.app/",
     codeUrl: "https://github.com/Abhigna1975/Popnwrap.git",
     summary: [
@@ -140,6 +145,7 @@ const Projects = () => {
       </div>
     </div>
   );
+};
 };
 
 export default Projects;

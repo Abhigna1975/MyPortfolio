@@ -38,7 +38,7 @@
 
 .about-large {
   font-size: 5rem;
-  font-weight: 900;
+  font-weight: 200;
   color: transparent;
   -webkit-text-stroke: 0.2px #fff;
   text-stroke: 2px #fff;
@@ -50,7 +50,7 @@
 
 .me-small {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 200;
   color: #d6fdff;
   padding: 5px 15px;
   border-radius: 5px;
@@ -65,6 +65,7 @@
 
 .about-content p {
   font-size: 1.2rem;
+  font-weight: 200;
   line-height: 1.8;
   color: #e0e0e0;
   margin-bottom: 1.5rem;

@@ -1,7 +1,11 @@
 // src/components/Education.jsx
-import React from "react";
-import "../styles/Education.css"; // Make sure this path is correct
+// line 1
+import React from 'react';
+import "../styles/Education.css";
 
+const Education = ({ activeTab }) => {
+  if (activeTab !== 'home') return null;
+  
 const EducationList = [
   {
     degree: "Master of Science in Computer Science & Information Technology",
@@ -43,6 +47,7 @@ const Education = () => {
       </div>
     </section>
   );
+};
 };
 
 export default Education;

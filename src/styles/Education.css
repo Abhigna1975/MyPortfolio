@@ -27,7 +27,7 @@
 .education-title-large {
   position: absolute;
   font-size: 4.5rem;
-  font-weight: bold;
+  font-weight: 200;
   color: #fff;
   text-stroke: 0.2px #fff;
   -webkit-text-stroke: 0.2px #fff;
@@ -44,7 +44,7 @@
 .education-title-small {
   position: absolute;
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 200;
   color: #d6fdff;
   letter-spacing: 0px;
   line-height: 1;
@@ -62,6 +62,7 @@
 .education-section p {
   font-size: 1rem;
   margin-bottom: 0rem;
+  font-weight: 200;
   margin-top: 0rem;
   text-align: left;
   color: #ffffff;
@@ -77,10 +78,11 @@
   width: calc(100% - 40px);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 200;
 }
 
 .education-entry .degree {
-  font-weight: bold;
+  font-weight: 200;
   font-size: 1.5rem;
   margin-top: 0rem;
   margin-bottom: 0.4rem;
@@ -92,6 +94,7 @@
   font-style: italic;
   color: #ffffff;
   font-size: 0.95rem;
+  font-weight: 200;
 }
 
 .education-entry .date {
@@ -99,6 +102,7 @@
   font-style: italic;
   color: #ffffff;
   font-size: 0.95rem;
+  font-weight: 200;
   text-align: right;
 }
 
@@ -122,6 +126,7 @@ html, body {
   background-color: #000000;
   border-radius: 10px;
   width: 1000px;
+  font-weight: 200;
   text-align: center;
   margin: 0 auto 3rem auto;
   margin-top: 0 !important;

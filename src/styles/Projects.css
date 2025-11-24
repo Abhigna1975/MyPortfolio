@@ -6,6 +6,7 @@
   margin: 0px auto;
   color: rgb(255, 255, 255);
   position: relative;
+  font-weight: 200;
 }
 
 /* Rotated Title */
@@ -18,13 +19,14 @@
   white-space: nowrap;
   height: auto;
   width: auto;
+  font-weight: 200;
 }
 
 /* Large title (My) - positioned on top */
 .title-my {
   position: absolute;
   font-size: 4.5rem;
-  font-weight: bold;
+  font-weight: 200;
   color: #fff;
   text-stroke: 0.2px #fff;
   -webkit-text-stroke: 0.2px #fff;
@@ -41,7 +43,7 @@
 .title-projects {
   position: absolute;
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 200;
   color: #d6fdff;
   letter-spacing: 0px;
   line-height: 1;
@@ -58,6 +60,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   width: calc(100% - 120px);
+  font-weight: 200;
 }
 
 /* Individual Project Block - Clean Layout */
@@ -72,12 +75,14 @@
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  font-weight: 200;
 }
 
 .project-block:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   border-color: rgba(0, 0, 0, 0.3);
+  font-weight: 200;
 }
 
 /* Project Image Container */
@@ -87,6 +92,7 @@
   overflow: hidden;
   border-radius: 15px;
   margin-bottom: 12px; /* Reduced from 15px */
+  font-weight: 200;
 }
 
 /* Project Image */
@@ -96,6 +102,7 @@
   object-fit: cover;
   transition: transform 0.4s ease;
   border-radius: 15px;
+  font-weight: 200;
 }
 
 .project-block:hover .project-img {
@@ -108,6 +115,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Added to prevent stretching */
+  font-weight: 200;
 }
 
 /* Project Header Info - Name and Click GIF side by side */
@@ -118,12 +126,13 @@
   margin-bottom: 0; /* Keep as 0 */
   gap: 15px;
   min-height: auto; /* Added to prevent extra height */
+  font-weight: 200;
 }
 
 /* Project Name */
 .project-name {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #63f4fc;
   margin: 0; /* Keep margins at 0 */
   line-height: 1.3;
@@ -158,6 +167,7 @@
   padding-top: 12px; /* Reduced from 15px */
   border-top: 1px solid rgba(99, 244, 252, 0.2);
   animation: slideDown 0.4s ease;
+  font-weight: 200;
 }
 
 @keyframes slideDown {
@@ -178,6 +188,7 @@
   list-style: none;
   padding: 0;
   margin: 0 0 12px 0; /* Reduced from 15px */
+  font-weight: 200;
 }
 
 /* Summary Points */
@@ -188,12 +199,13 @@
   margin-bottom: 6px; /* Reduced from 8px */
   padding-left: 20px;
   position: relative;
+  font-weight: 200;
 }
 
 .summary-point::before {
   content: "▸";
   color: #63f4fc;
-  font-weight: bold;
+  font-weight: 200;
   position: absolute;
   left: 0;
   top: 0;
@@ -207,7 +219,7 @@
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 200;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
@@ -223,7 +235,7 @@
 /* Project Title */
 .project-title {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #ffffff;
   margin: 0 0 12px 0;
   line-height: 1.3;
@@ -237,7 +249,7 @@
   margin: 0 0 15px 0;
   font-style: italic;
   text-align: center;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 /* Project Description */
@@ -248,6 +260,7 @@
   margin: 0 0 20px 0;
   text-align: left;
   flex-grow: 1;
+  font-weight: 200;
 }
 
 /* Project Details (Expandable) */
@@ -256,6 +269,7 @@
   padding-top: 20px;
   border-top: 1px solid rgba(99, 244, 252, 0.2);
   animation: slideDown 0.4s ease;
+  font-weight: 200;
 }
 
 /* Project Links Container */
@@ -264,6 +278,7 @@
   gap: 12px;
   margin-top: 20px;
   justify-content: center;
+  font-weight: 200;
 }
 
 /* Project Link Styles */
@@ -274,13 +289,14 @@
   text-decoration: none;
   border-radius: 25px;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 200;
   border: 1px solid rgba(99, 244, 252, 0.3);
   transition: all 0.3s ease;
   text-align: center;
   min-width: 100px;
   position: relative;
   overflow: hidden;
+  font-weight: 200;
 }
 
 .project-link::before {
@@ -292,6 +308,7 @@
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   transition: left 0.5s;
+  font-weight: 200;
 }
 
 .project-link:hover::before {
@@ -303,6 +320,7 @@
   border-color: rgba(99, 244, 252, 0.6);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(99, 244, 252, 0.2);
+  font-weight: 200;
 }
 
 /* Demo Link Special Styling */
@@ -310,12 +328,14 @@
   background: linear-gradient(145deg, rgba(33, 150, 243, 0.15), rgba(33, 150, 243, 0.05));
   color: #2196f3;
   border-color: rgba(33, 150, 243, 0.4);
+  font-weight: 200;
 }
 
 .demo-link:hover {
   background: linear-gradient(145deg, rgba(33, 150, 243, 0.25), rgba(33, 150, 243, 0.15));
   border-color: rgba(33, 150, 243, 0.6);
   box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
+  font-weight: 200;
 }
 
 /* Responsive Design */
@@ -324,6 +344,7 @@
     grid-template-columns: repeat(2, 1fr);
     margin-left: 80px;
     width: calc(100% - 80px);
+    font-weight: 200;
   }
   
   .projects {
@@ -341,16 +362,19 @@
     margin-left: 0;
     width: 100%;
     gap: 20px;
+    font-weight: 200;
   }
   
   .project-block {
     padding: 15px; /* Reduced from 20px */
     min-height: 280px; /* Reduced from 350px */
+    font-weight: 200;
   }
   
   .project-image-container {
     height: 140px; /* Reduced from 150px */
     margin-bottom: 10px; /* Reduced */
+    font-weight: 200;
   }
   
   .project-info {
@@ -363,10 +387,12 @@
   
   .project-tech {
     font-size: 0.8rem;
+    font-weight: 200;
   }
   
   .project-description {
     font-size: 0.85rem;
+    font-weight: 200;
   }
   
   .click-me-gif {
@@ -388,7 +414,7 @@
     font-size: 2rem;
     color: #63f4fc;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 200;
   }
 }
 
@@ -401,6 +427,7 @@
   .project-block {
     min-height: 260px; /* Reduced from 300px */
     padding: 12px; /* Further reduced */
+    font-weight: 200;
   }
   
   .project-image-container {
@@ -410,6 +437,7 @@
   
   .project-info {
     padding: 0;
+    font-weight: 200;
   }
   
   .project-links {
@@ -427,13 +455,14 @@
   gap: 12px;
   margin-top: 15px;
   margin-bottom: 10px;
+  font-weight: 200;
 }
 
 .project-btn {
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 14px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -442,23 +471,128 @@
 }
 
 .live-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #63f4fc 0%, #ffffff 100%);
+  color: black;
+  border: none;
+  font-weight: 200;
 }
 
 .live-btn:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #63f4fc 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4);
 }
 
 .code-btn {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+  background: linear-gradient(135deg, #ffffff 0%, #63f4fc 100%);
+  color: black;
+  border: none;
+  font-weight: 200;
 }
 
 .code-btn:hover {
+  background: linear-gradient(135deg, #63f4fc 0%, #ffffff 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4);
+}
+
+.hide-summary-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc);
+  color: white;
+  border: 1px solid #63f4fc;
+}
+
+.hide-summary-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a);
+}
+
+.live-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc);
+  color: white;
+  border: 1px solid #63f4fc;
+  font-weight: 200;
+}
+
+.live-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4);
+}
+
+.code-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc);
+  color: white;
+  border: 1px solid #63f4fc;
+  font-weight: 200;
+}
+
+.code-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.project-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.live-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc);
+  color: white;
+  border: 1px solid #63f4fc;
+  font-weight: 200;
+}
+
+.live-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4);
+}
+
+.code-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc);
+  color: white;
+  border: 1px solid #63f4fc;
+  font-weight: 200;
+}
+
+.code-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4);
+}
+
+.hide-summary-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc);
+  color: white;
+  border: 1px solid #63f4fc;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.hide-summary-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a);
+  transform: translateY(-2px);
 }

@@ -17,13 +17,14 @@
   margin-right: auto;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-weight: 200;
 }
 
 /* Large title (Technical) - positioned safely */
 .technical-title-large {
   position: absolute;
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 200;
   color: #fff;
   text-stroke: 0.2px #fff;
   -webkit-text-stroke: 0.2px #fff;
@@ -43,7 +44,7 @@
 .technical-title-small {
   position: absolute;
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 200;
   color: #d6fdff;
   letter-spacing: 0px;
   line-height: 1;
@@ -62,12 +63,14 @@
   max-width: calc(100% - 140px);
   box-sizing: border-box;
   padding-top: 10px; /* Further reduced top padding */
+  font-weight: 200;
 }
 
 .technical-skills h2 {
   font-size: 2rem;
   margin-bottom: 20px; /* Reduced from 30px */
   color: #d6fdff;
+  font-weight: 200;
 }
 
 .skills-grid {
@@ -79,6 +82,7 @@
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
+  font-weight: 200;
 }
 
 .skill-category {
@@ -90,6 +94,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   box-sizing: border-box;
+  font-weight: 200;
 }
 
 /* Specific positioning for better layout */
@@ -107,12 +112,14 @@
   color: #63f4fc;
   text-align: left;
   padding-left: 0;
+  font-weight: 200;
 }
 
 .skill-category ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-weight: 200;
 }
 
 .skill-category li {
@@ -121,6 +128,7 @@
   color: #ffffff;
   display: flex;
   align-items: center;
+  font-weight: 200;
 }
 
 .skill-icon {
@@ -128,6 +136,7 @@
   height: 20px;
   margin-right: 8px;
   flex-shrink: 0;
+  font-weight: 200;
 }
 
 /* Responsive adjustments for medium screens */
@@ -136,24 +145,29 @@
     max-width: 95%;
     padding: 25px 35px; /* Reduced padding */
     min-height: 320px; /* Reduced min-height */
+    font-weight: 200;
   }
   
   .technical-title-large {
     top: 70px; /* Adjusted position */
+    font-weight: 200;
   }
   
   .technical-title-small {
     top: 90px; /* Adjusted position */
+    font-weight: 200;
   }
   
   .skills-content {
     margin-left: 100px;
     padding-top: 15px;
+    font-weight: 200;
   }
   
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px; /* Slightly increased for better spacing in 3-column layout */
+    font-weight: 200;
   }
   
   .skill-category:nth-child(1) { grid-column: 1; grid-row: 1; }
@@ -170,28 +184,33 @@
     height: auto;
     min-height: 400px; /* Adjusted for tablet */
     padding: 25px 30px;
+    font-weight: 200;
   }
   
   .technical-title-large {
     font-size: 3rem;
     left: -45px;
     top: 60px;
+    font-weight: 200;
   }
   
   .technical-title-small {
     left: -45px;
     font-size: 1.6rem;
     top: 80px;
+    font-weight: 200;
   }
   
   .skills-content {
     margin-left: 80px;
     padding-top: 10px;
+    font-weight: 200;
   }
   
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
+    font-weight: 200;
   }
   
   .skill-category:nth-child(1) { grid-column: 1; grid-row: 1; }
@@ -212,6 +231,7 @@
     min-height: auto;
     margin-top: 30px;
     margin-bottom: 2rem;
+    font-weight: 200;
   }
   
   .skills-content {
@@ -219,11 +239,13 @@
     padding-right: 0;
     max-width: 100%;
     padding-top: 0;
+    font-weight: 200;
   }
   
   .technical-title-large,
   .technical-title-small {
     display: none;
+    font-weight: 200;
   }
   
   /* Add mobile title */
@@ -231,30 +253,35 @@
     content: "Technical Skills";
     display: block;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 200;
     color: #63f4fc;
     text-align: center;
     margin-bottom: 1.5rem; /* Reduced from 2rem */
+    font-weight: 200;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 12px; /* Reduced gap */
     max-width: 100%;
+    font-weight: 200;
   }
   
   .skill-category {
     width: 100%;
     padding: 10px; /* Reduced padding */
+    font-weight: 200;
   }
   
   .skill-category:nth-child(n) {
     grid-column: 1;
     grid-row: auto;
+    font-weight: 200;
   }
   
   .skill-category h3 {
     margin-top: 2px; /* Further reduced */
+    font-weight: 200;
   }
 }
 
@@ -263,26 +290,31 @@
   .technical-skills {
     padding: 15px;
     border-radius: 5px;
+    font-weight: 200;
   }
   
   .technical-skills::before {
     font-size: 1.5rem;
     margin-bottom: 1rem; /* Reduced */
+    font-weight: 200;
   }
   
   .skill-category {
     padding: 10px; /* Reduced */
+    font-weight: 200;
   }
   
   .skill-category h3 {
     font-size: 1rem;
     margin-top: 0; /* Removed top margin */
     margin-bottom: 6px;
+    font-weight: 200;
   }
   
   .skill-category li {
     font-size: 0.9rem;
     margin-bottom: 4px; /* Reduced */
+    font-weight: 200;
   }
   
   .skill-icon {

@@ -7,13 +7,14 @@
   text-align: left;
   color: #ffffff;
   padding: 2rem 0;
+  font-weight: 200;
 }
 
 /* Large title (My) - positioned on top */
 .experience-title-large {
   position: absolute;
   font-size: 4.5rem;
-  font-weight: bold;
+  font-weight: 200;
   color: #fff;
   text-stroke: 0.2px #fff;
   -webkit-text-stroke: 0.2px #fff;
@@ -32,7 +33,7 @@
 .experience-title-small {
   position: absolute;
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 200;
   color: #d6fdff;
   letter-spacing: 0px;
   line-height: 1;
@@ -47,6 +48,7 @@
 .experience-content {
   margin-left: 160px; /* Increased from 150px to move experience cards further right */
   padding-right: 40px;
+  font-weight: 200;
 }
 
 .experience-card {
@@ -58,6 +60,7 @@
   transition: background-color 0.3s ease;
   max-width: 100%;
   width: auto;
+  font-weight: 200;
 }
 
 .experience-header {
@@ -65,12 +68,14 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  font-weight: 200;
 }
 
 .title-row {
   display: flex;
   align-items: center;
   gap: 15px;
+  font-weight: 200;
 }
 
 .click-me-gif {
@@ -89,21 +94,24 @@
   font-size: 1.5rem;
   color: #63f4fc;
   margin: 0;
+  font-weight: 200;
 }
 
 .experience-date {
   font-style: italic;
   color: #ccc;
+  font-weight: 200;
 }
 
 .toggle-summary {
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  font-weight: 200;
 }
 
 .toggle-arrow {
-  font-weight: bold;
+  font-weight: 200;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -116,6 +124,7 @@
   padding-top: 15px;
   border-top: 1px solid rgba(99, 244, 252, 0.2);
   animation: slideDown 0.4s ease;
+  font-weight: 200;
 }
 
 @keyframes slideDown {
@@ -133,17 +142,20 @@
   font-size: 1.25rem;
   color: #ffffff;
   margin-bottom: 15px;
+  font-weight: 200;
 }
 
 .experience-details ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 20px;
+  font-weight: 200;
 }
 
 .experience-details li {
   margin-bottom: 8px;
   line-height: 1.6;
+  font-weight: 200;
 }
 
 .title-with-gif {
@@ -152,27 +164,26 @@
   gap: 8px;
 }
 
-/* Minimize Experience Button - Same style as Certifications */
-.minimize-experience-btn {
-  background: linear-gradient(145deg, rgba(255, 99, 99, 0.15), rgba(255, 99, 99, 0.05)) !important;
-  color: #ff6363 !important;
-  border: 2px solid rgba(255, 99, 99, 0.4) !important;
-  padding: 12px 30px !important;
-  border-radius: 25px !important;
-  font-size: 0.9rem !important;
-  font-weight: 600 !important;
+/* Hide Summary Experience Button - Matching Projects Style */
+.HideSummary-experience-btn {
+  background: linear-gradient(135deg, #1a1a1a, #63f4fc) !important;
+  color: white !important;
+  border: 1px solid #63f4fc !important;
+  padding: 8px 20px !important;
+  border-radius: 20px !important;
+  font-size: 0.85rem !important;
+  font-weight: 200 !important;
   cursor: pointer !important;
   transition: all 0.3s ease !important;
   text-align: center !important;
-  min-width: 120px !important;
   display: block !important;
   margin: 15px auto 0 auto !important;
-  box-shadow: 0 4px 15px rgba(255, 99, 99, 0.2) !important;
+  width: 100% !important;
 }
 
-.minimize-experience-btn:hover {
-  background: linear-gradient(145deg, rgba(255, 99, 99, 0.25), rgba(255, 99, 99, 0.15)) !important;
-  border-color: rgba(255, 99, 99, 0.6) !important;
+.HideSummary-experience-btn:hover {
+  background: linear-gradient(135deg, #63f4fc, #1a1a1a) !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(255, 99, 99, 0.3) !important;
+  box-shadow: 0 6px 20px rgba(99, 244, 252, 0.4) !important;
+  font-weight: 200;
 }

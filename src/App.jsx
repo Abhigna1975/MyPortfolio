@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Education from './components/Education';
@@ -8,6 +8,8 @@ import TechnicalSkills from './components/TechnicalSkills';
 import Contact from './components/Contact';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('home');
+
   return (
     <div 
       className="app-container"
@@ -20,19 +22,13 @@ function App() {
         minHeight: '100vh'
       }}
     >
-      <Hero />
-      <About />
-      
-      <div className="publications-certifications-container">
-      </div>
-
-      <div className="other-sections">
-        <Education />
-        <Experience />
-        <Projects />
-        <TechnicalSkills />
-        <Contact />
-      </div>
+      <Hero activeTab={activeTab} setActiveTab={setActiveTab} />
+      <About activeTab={activeTab} />
+      <Education activeTab={activeTab} />
+      <Experience activeTab={activeTab} />
+      <Projects activeTab={activeTab} />
+      <TechnicalSkills activeTab={activeTab} />
+      <Contact activeTab={activeTab} />
     </div>
   );
 }
