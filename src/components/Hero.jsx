@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import ProfileImage from '../assets/Profile.jpg';
-import ResumePDF from '../assets/Resume.pdf';
+import ResumePDF from '../assets/Abhigna Resume.pdf';
 
 // Import your page components
 // Line 28-31 in Hero.jsx - change to:
