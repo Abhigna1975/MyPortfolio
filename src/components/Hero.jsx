@@ -6,7 +6,7 @@ import ResumePDF from '../assets/Resume.pdf';
 
 // Import your page components
 // Line 28-31 in Hero.jsx - change to:
-import Uiux from './uiux';  // or whatever the correct name is
+// import Uiux from './uiux';  // or whatever the correct name is
 import Graphic from './Graphic';
 import Web from './Web';
 import Doodle from './Doodle';
