@@ -2,19 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import ProfileImage from '../assets/Profile.jpg';
-import ResumePDF from '../assets/Abhigna Resume.pdf';
 
-// Import your page components
-// Line 28-31 in Hero.jsx - change to:
-// import Uiux from './uiux';  // or whatever the correct name is
-// import Graphic from './Graphic';
-// import Web from './Web';
-// import Doodle from './Doodle';
+const ResumePDF = '/Abhigna Resume.pdf'; // Update with your exact filename
 
-const Hero = () => {
+const Hero = ({ activeTab, setActiveTab }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [showResumeModal, setShowResumeModal] = useState(false);
-  const [activeTab, setActiveTab] = useState('home');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -56,14 +49,47 @@ const Hero = () => {
   // Render different content based on active tab
   const renderContent = () => {
     switch(activeTab) {
-      case 'Ui-ux':
-        return <Uiux />;
+      case 'ui-ux':
+        return (
+          <div style={{ padding: '2rem', color: '#fff', minHeight: '60vh' }}>
+            <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>UI/UX Designer</h1>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
+              This section will showcase your UI/UX design work, case studies, and projects.
+              Add your UI/UX portfolio content here.
+            </p>
+          </div>
+        );
       case 'graphic':
-        return <Graphic />;
+        return (
+          <div style={{ padding: '2rem', color: '#fff', minHeight: '60vh' }}>
+            <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Graphic Designer</h1>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
+              This section will showcase your graphic design work, branding projects, and creative designs.
+              Add your graphic design portfolio content here.
+            </p>
+          </div>
+        );
       case 'web':
-        return <Web />;
+        return (
+          <div style={{ padding: '2rem', color: '#fff', minHeight: '60vh' }}>
+            <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Web Designer</h1>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
+              This section will showcase your web design projects, websites you've built, and design systems.
+              Add your web design portfolio content here.
+            </p>
+          </div>
+        );
       case 'doodle':
-        return <Doodle />;
+        return (
+          <div style={{ padding: '2rem', color: '#fff', minHeight: '60vh' }}>
+            <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Doodle Art</h1>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
+              This section will showcase your doodle artwork, illustrations, and creative sketches.
+              Add your doodle art portfolio content here.
+            </p>
+          </div>
+        );
+      case 'home':
       default:
         return (
           <>
@@ -154,7 +180,7 @@ const Hero = () => {
   return (
     <section className="hero">
       {/* Navigation Tabs */}
-      {/* <nav className="hero-nav">
+      <nav className="hero-nav">
         <button 
           className={`nav-tab ${activeTab === 'home' ? 'active' : ''}`}
           onClick={() => setActiveTab('home')}
@@ -185,7 +211,7 @@ const Hero = () => {
         >
           Doodle Art
         </button>
-      </nav> */}
+      </nav>
 
       {/* Render content based on active tab */}
       {renderContent()}

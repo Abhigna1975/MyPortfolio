@@ -1,11 +1,7 @@
 // src/components/Education.jsx
-// line 1
 import React from 'react';
 import "../styles/Education.css";
 
-const Education = ({ activeTab }) => {
-  if (activeTab !== 'home') return null;
-  
 const EducationList = [
   {
     degree: "Master of Science in Computer Science & Information Technology",
@@ -18,7 +14,8 @@ const EducationList = [
     institution: "AAR Mahaveer Engineering College, Hyderabad, India",
     date: "Jun 2019 – Jul 2023",
     highlights: ["GPA: 7.25/10.0"],
-  } ]
+  }
+];
 
 const Education = () => {
   return (
@@ -47,7 +44,6 @@ const Education = () => {
       </div>
     </section>
   );
-};
 };
 
 export default Education;

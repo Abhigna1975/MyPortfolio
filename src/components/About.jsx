@@ -1,17 +1,9 @@
 // src/components/About.jsx
 import '../styles/About.css';
 
-const About = ({ activeTab }) => {
-  if (activeTab !== 'home') return null;
-  
-  // rest of your code...
-
-const About = ({ activeTab }) => {
-  // Only render on home tab
-  if (activeTab !== 'home') return null;
-
+const About = () => {
   const paragraph = [
-    "A UI/UX designer at Starteryou handling everything design related - mobile app, web interfaces, and marketing materials from social media graphics to flyers. I create user-centered digital experiences while keeping brand consistency across all touchpoints. Proficient in Figma, Canva, Adobe Creative Suite, and Photoshop. ", 
+    "A UI/UX designer at Starteryou handling everything design related - mobile app, web interfaces, and marketing materials from social media graphics to flyers. I create user-centered digital experiences while keeping brand consistency across all touchpoints. Proficient in Figma, Canva, Adobe Creative Suite, and Photoshop.", 
     "What sets me apart: you get a UI/UX designer who can seamlessly handle graphic design needs too."
   ];
   
@@ -29,7 +21,6 @@ const About = ({ activeTab }) => {
       </div>
     </section>
   );
-};
 };
 
 export default About;

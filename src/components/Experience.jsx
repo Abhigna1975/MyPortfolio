@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import "../styles/Experience.css"; // Ensure path is correct
+import "../styles/Experience.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import clickMeGif from "../assets/clickme.gif"; // Import your GIF
-
-const Experience = ({ activeTab }) => {
-  if (activeTab !== 'home') return null;
-  
-  // rest of your code...
+import clickMeGif from "../assets/clickme.gif";
 
 const Experiences = [
   {
@@ -14,12 +9,12 @@ const Experiences = [
     company: "Starteryou Inc., New York, NY",
     date: "Feb 2025 – Present",
     points: [
-  "Handle all design needs for the startup - mobile app interfaces, web design, social media graphics, flyers and brand assets",
-  "Design user-centered mobile and web experiences using Figma and Canva",
-  "Maintain brand consistency across digital products and marketing materials",
-  "Conduct usability testing and iterate based on user feedback to improve product experience",
-  "Collaborate with cross-functional teams including developers and marketing to deliver cohesive solutions"
-],
+      "Handle all design needs for the startup - mobile app interfaces, web design, social media graphics, flyers and brand assets",
+      "Design user-centered mobile and web experiences using Figma and Canva",
+      "Maintain brand consistency across digital products and marketing materials",
+      "Conduct usability testing and iterate based on user feedback to improve product experience",
+      "Collaborate with cross-functional teams including developers and marketing to deliver cohesive solutions"
+    ],
   },
   {
     title: "Classroom Teaching Assistant",
@@ -38,13 +33,9 @@ const Experiences = [
     date: "Sep 2020 - Aug 2023",
     points: [
       "Designed and developed interactive websites using HTML, CSS, and JavaScript",
-
       "Created responsive web layouts and user interfaces for various client projects",
-
       "Collaborated with team members to deliver functional and visually appealing websites",
-
       "Implemented modern design principles and ensured cross-browser compatibility",
-
       "Focused on user experience and interface optimization"
     ],
   },
@@ -94,8 +85,8 @@ const Experience = () => {
                   ))}
                 </ul>
                 <button 
-                    className="HideSummary-experience-btn"
-                    onClick={() => toggleExpand(index)}
+                  className="HideSummary-experience-btn"
+                  onClick={() => toggleExpand(index)}
                 >
                   Hide Summary
                 </button>
@@ -106,7 +97,6 @@ const Experience = () => {
       </div>
     </div>
   );
-};
 };
 
 export default Experience;

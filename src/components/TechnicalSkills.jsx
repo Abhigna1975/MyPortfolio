@@ -2,11 +2,6 @@
 import React from 'react';
 import '../styles/TechnicalSkills.css';
 
-const TechnicalSkills = ({ activeTab }) => {
-  if (activeTab !== 'home') return null;
-  
-  // rest of your code...
-
 const skills = {
   'Frontend Technologies': ['HTML5', 'CSS3', 'JavaScript', 'React', 'Styled Components'],
   'Design Tools': ['Figma', 'Canva', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
@@ -71,7 +66,7 @@ const getIconPath = (tool) => {
       </svg>
     `)}`,
     
-    // Custom SVG icons for missing tools (embedded as data URLs)
+    // Custom SVG icons for missing tools
     'Styled Components': `data:image/svg+xml;base64,${btoa(`
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L19 8L21 9ZM22 17C22 18.1 21.1 19 20 19H4C2.9 19 2 18.1 2 17V10C2 8.9 2.9 8 4 8H20C21.1 8 22 8.9 22 10V17ZM20 10H4V17H20V10ZM12 15.5C10.6 15.5 9.5 14.4 9.5 13S10.6 10.5 12 10.5S14.5 11.6 14.5 13S13.4 15.5 12 15.5Z" fill="#DB7093"/>
@@ -123,7 +118,6 @@ const getIconPath = (tool) => {
     `)}`
   };
 
-  // Return the icon URL if it exists, otherwise return a generic fallback
   return iconMapping[tool] || `data:image/svg+xml;base64,${btoa(`
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="3" y="3" width="18" height="18" rx="2" stroke="#63f4fc" stroke-width="2" fill="none"/>
@@ -155,7 +149,6 @@ const TechnicalSkills = () => {
                       alt={`${tool} icon`}
                       className="skill-icon"
                       onError={(e) => {
-                        // If icon fails to load, hide it rather than showing broken image
                         console.log(`Failed to load icon for: ${tool}`);
                         e.target.style.display = 'none';
                       }}
@@ -171,7 +164,6 @@ const TechnicalSkills = () => {
       </div>
     </section>
   );
-};
 };
 
 export default TechnicalSkills;

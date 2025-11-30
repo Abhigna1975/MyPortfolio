@@ -23,12 +23,18 @@ function App() {
       }}
     >
       <Hero activeTab={activeTab} setActiveTab={setActiveTab} />
-      <About activeTab={activeTab} />
-      <Education activeTab={activeTab} />
-      <Experience activeTab={activeTab} />
-      <Projects activeTab={activeTab} />
-      <TechnicalSkills activeTab={activeTab} />
-      <Contact activeTab={activeTab} />
+      
+      {/* Only show these sections when on 'home' tab */}
+      {activeTab === 'home' && (
+        <>
+          <About />
+          <Education />
+          <Experience />
+          <Projects />
+          <TechnicalSkills />
+          <Contact />
+        </>
+      )}
     </div>
   );
 }

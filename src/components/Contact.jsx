@@ -3,11 +3,6 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
-const Contact = ({ activeTab }) => {
-  if (activeTab !== 'home') return null;
-  
-  // rest of your code...
-
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -130,7 +125,6 @@ const Contact = () => {
       </div>
     </>
   );
-};
 };
 
 export default Contact;
