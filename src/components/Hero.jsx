@@ -180,7 +180,7 @@ const Hero = ({ activeTab, setActiveTab }) => {
   return (
     <section className="hero">
       {/* Navigation Tabs */}
-      <nav className="hero-nav">
+      {/* <nav className="hero-nav">
         <button 
           className={`nav-tab ${activeTab === 'home' ? 'active' : ''}`}
           onClick={() => setActiveTab('home')}
@@ -211,7 +211,7 @@ const Hero = ({ activeTab, setActiveTab }) => {
         >
           Doodle Art
         </button>
-      </nav>
+      </nav> */}
 
       {/* Render content based on active tab */}
       {renderContent()}
