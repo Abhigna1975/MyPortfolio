@@ -2,14 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import ProfileImage from '../assets/Profile.jpg';
-import ResumePDF from '../assets/Resume.pdf';
+import ResumePDF from '../assets/Abhigna Resume.pdf';
 
 // Import your page components
 // Line 28-31 in Hero.jsx - change to:
 // import Uiux from './uiux';  // or whatever the correct name is
-import Graphic from './Graphic';
-import Web from './Web';
-import Doodle from './Doodle';
+// import Graphic from './Graphic';
+// import Web from './Web';
+// import Doodle from './Doodle';
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -154,7 +154,7 @@ const Hero = () => {
   return (
     <section className="hero">
       {/* Navigation Tabs */}
-      <nav className="hero-nav">
+      {/* <nav className="hero-nav">
         <button 
           className={`nav-tab ${activeTab === 'home' ? 'active' : ''}`}
           onClick={() => setActiveTab('home')}
@@ -185,7 +185,7 @@ const Hero = () => {
         >
           Doodle Art
         </button>
-      </nav>
+      </nav> */}
 
       {/* Render content based on active tab */}
       {renderContent()}
