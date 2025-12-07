@@ -8,17 +8,18 @@
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  padding: 2rem;
+  padding: 2rem 100px 2rem 2rem; /* Added 100px right padding */
   margin-top: 3rem;
   margin-bottom: 3rem;
   position: relative;
 }
 
 .about-content {
-  margin-left: 180px; /* Increased from 120px to 180px */
+  margin-left: 180px;
   flex: 1;
-  max-width: calc(100% - 200px); /* Adjusted accordingly */
-  padding-top: 1rem; /* Added top padding for better spacing */
+  max-width: calc(100% - 280px); /* Adjusted to account for left margin and right padding */
+  padding-top: 1rem;
+  padding-right: 30px; /* Add gap on the right inside about content */
 }
 
 .about-content h2 {
@@ -44,12 +45,14 @@
   text-stroke: 2px #fff;
   line-height: 0.8;
   margin: 0;
+  top: -30px;
+  left: 0%;
   letter-spacing: -10px;
   position: relative;
 }
 
 .me-small {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 200;
   color: #d6fdff;
   padding: 5px 15px;
@@ -57,7 +60,7 @@
   line-height: 1;
   letter-spacing: 2px;
   position: absolute;
-  top: 80%;
+  top: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -71,7 +74,7 @@
   margin-bottom: 1.5rem;
   text-align: justify;
   word-spacing: 0.1rem;
-  margin-top: 0; /* Ensure no extra top margin */
+  margin-top: 0;
 }
 
 .about-content ul {

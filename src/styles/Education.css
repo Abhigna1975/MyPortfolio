@@ -56,7 +56,7 @@
 
 .education-content {
   margin-left: 150px; /* Increased from 80px to move degrees further right */
-  padding-right: 40px;
+  padding-right: 0px;
 }
 
 .education-section p {

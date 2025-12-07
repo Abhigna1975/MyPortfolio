@@ -47,7 +47,7 @@
 
 .experience-content {
   margin-left: 160px; /* Increased from 150px to move experience cards further right */
-  padding-right: 40px;
+  padding-right: 0px;
   font-weight: 200;
 }
 

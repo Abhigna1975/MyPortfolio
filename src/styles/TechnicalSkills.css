@@ -6,7 +6,7 @@
   background-color: #000000;
   border-radius: 10px;
   max-width: 1420px;
-  width: 100%;
+  width: 1420px;
   height: auto; /* Changed from fixed 550px to auto */
   min-height: 280px; /* Further reduced minimum height */
   color: #ffffff;
@@ -33,7 +33,7 @@
   line-height: 1;
   margin: 0;
   z-index: 2;
-  left: -40px;
+  left: -20px;
   top: 110px; /* Further reduced from 80px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
@@ -50,7 +50,7 @@
   line-height: 1;
   margin: 0;
   z-index: 1;
-  left: 68px;
+  left: 75px;
   top: 115px; /* Further reduced from 100px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
@@ -321,5 +321,112 @@
     width: 18px;
     height: 18px;
     margin-right: 6px;
+  }
+}
+
+/* ========================================
+   FORCE UNIFORM WIDTH FOR ALL SECTIONS
+   ======================================== */
+
+/* Override ANY existing width settings */
+.hero,
+.about,
+.education,
+.education-section,
+.experience,
+.experience-section,
+.skills,
+.skills-section,
+.projects,
+.projects-section,
+.contact,
+.contact-section {
+  width: 1420px !important;
+  max-width: 1420px !important;
+  min-width: 1420px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  padding: 2rem 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Hero gets extra top margin */
+.hero {
+  margin-top: 4rem !important;
+}
+
+/* Remove any wrapper width restrictions */
+section {
+  width: 1420px !important;
+  max-width: none !important;
+}
+
+/* Ensure containers don't exceed section width */
+.hero-content,
+.about-content,
+.education-content,
+.experience-content,
+.skills-content,
+.projects-container,
+.experience-container,
+.skills-container {
+  max-width: calc(1420px - 190px) !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 1500px) {
+  .hero,
+  .about,
+  .education,
+  .education-section,
+  .experience,
+  .experience-section,
+  .skills,
+  .skills-section,
+  .projects,
+  .projects-section,
+  .contact,
+  .contact-section {
+    width: 95vw !important;
+    max-width: 1420px !important;
+    min-width: 1420px !important;
+  }
+}
+
+@media (max-width: 1420px) {
+  .hero,
+  .about,
+  .education,
+  .education-section,
+  .experience,
+  .experience-section,
+  .skills,
+  .skills-section,
+  .projects,
+  .projects-section,
+  .contact,
+  .contact-section {
+    width: 70vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .about,
+  .education,
+  .education-section,
+  .experience,
+  .experience-section,
+  .skills,
+  .skills-section,
+  .projects,
+  .projects-section,
+  .contact,
+  .contact-section {
+    width: 1420px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }

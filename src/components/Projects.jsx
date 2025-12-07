@@ -2,22 +2,16 @@ import React, { useState } from 'react';
 import clickmeGif from '../assets/clickme.gif';
 import '../styles/Projects.css';
 
-const Projects = ({ activeTab }) => {
-  if (activeTab !== 'home') return null;
-  
-  // rest of your code...
-
 // Images from public folder - use direct paths
 const proj1 = "/prj1.png";
 const proj2 = "/prj2.png";
 const proj3 = "/prj3.png";
 const proj4 = "/prj4.png";
 
-
 const projects = [
   {
     img: proj4,
-    name: "Portfolio Website for Fullstack Developer",
+    name: "Portfolio (CTO Of Starteryou)",
     liveUrl: "https://nikshepkulli.com/",
     codeUrl: "https://github.com/nikshepkulli/My-Portfolio.git",
     summary: [
@@ -33,7 +27,7 @@ const projects = [
   },
   {
     img: proj1,
-    name: "E-Commerce Website [POPNWRAP]",
+    name: "Popnwrap (E-Commerce Site)",
     liveUrl: "https://popnwrap.vercel.app/",
     codeUrl: "https://github.com/Abhigna1975/Popnwrap.git",
     summary: [
@@ -60,9 +54,12 @@ const projects = [
   },
 ];
 
-
-const Projects = () => {
+const Projects = ({ activeTab }) => {
   const [expandedProjects, setExpandedProjects] = useState({});
+
+  // Only return null if activeTab is explicitly passed and isn't 'home'
+  // If no activeTab prop, component will render normally
+  if (activeTab && activeTab !== 'home') return null;
 
   const toggleProject = (index) => {
     setExpandedProjects(prev => ({
@@ -145,7 +142,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
 };
 
 export default Projects;

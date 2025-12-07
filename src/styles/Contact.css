@@ -41,7 +41,7 @@
   line-height: 1;
   margin: 0;
   z-index: 2;
-  left: -70px; /* Moved further left to accommodate wider container */
+  left: -10px; /* Moved further left to accommodate wider container */
   top: 200px; /* Reduced from 250px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
@@ -58,7 +58,7 @@
   line-height: 1;
   margin: 0;
   z-index: 1;
-  left: 45px; /* Moved further left */
+  left: 95px; /* Moved further left */
   top: 200px; /* Reduced from 270px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
