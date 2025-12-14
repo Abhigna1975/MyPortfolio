@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import ProfileImage from '../assets/Profile.jpg';
 
-const ResumePDF = '/Abhigna_Resume.pdf';
+const ResumePDF = '/Abhigna Resume.pdf';
 
 const Hero = ({ activeTab, setActiveTab }) => {
   const [isMobile, setIsMobile] = useState(false);
