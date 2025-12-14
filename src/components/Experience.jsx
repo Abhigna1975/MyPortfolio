@@ -19,7 +19,7 @@ const Experiences = [
   {
     title: "Classroom Teaching Assistant",
     company: "Sacred Heart University, Fairfield, CT",
-    date: "Sep 2023 - Dec 2024",
+    date: "May 2024 - July 2024",
     points: [
       "Assisted instructors with course planning and student engagement",
       "Led tutoring sessions and explained technical concepts clearly",
@@ -27,18 +27,7 @@ const Experiences = [
       "Encouraged collaboration and built a strong learning environment",
     ],
   },
-  {
-    title: "Web Designer",
-    company: "Smart Bridge, India",
-    date: "Sep 2020 - Aug 2023",
-    points: [
-      "Designed and developed interactive websites using HTML, CSS, and JavaScript",
-      "Created responsive web layouts and user interfaces for various client projects",
-      "Collaborated with team members to deliver functional and visually appealing websites",
-      "Implemented modern design principles and ensured cross-browser compatibility",
-      "Focused on user experience and interface optimization"
-    ],
-  },
+  
 ];
 
 const Experience = () => {

@@ -41,7 +41,7 @@ const projects = [
   },
   {
     img: proj2,
-    name: "Art Gallery Management System",
+    name: "Art Gallery Management Sys",
     liveUrl: "https://abhigna1975.github.io/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT/index.html",
     codeUrl: "https://github.com/Abhigna1975/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT",
     summary: [
