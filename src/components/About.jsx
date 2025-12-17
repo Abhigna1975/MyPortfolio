@@ -3,9 +3,9 @@ import '../styles/About.css';
 
 const About = () => {
   const paragraph = [
-    "A UI/UX designer at Starteryou handling everything design related - mobile app, web interfaces, and marketing materials from social media graphics to flyers. I create user-centered digital experiences while keeping brand consistency across all touchpoints. Proficient in Figma, Canva, Adobe Creative Suite, and Photoshop.", 
-    "What sets me apart: you get a UI/UX designer who can seamlessly handle graphic design needs too."
-  ];
+    "A UI Engineer at Starteryou developing mobile and web application interfaces using React.js, React Native, and modern JavaScript. I build responsive, accessible user interfaces by translating design specifications into production-ready code. Experienced with component architecture, RESTful API integration, and performance optimization across web and mobile platforms.",
+    "What sets me apart: you get a front-end engineer with strong design sensibility who bridges the gap between design and development, ensuring pixel-perfect implementations and seamless user experiences."
+];
   
   return (
     <section className="about">

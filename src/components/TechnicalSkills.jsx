@@ -3,12 +3,12 @@ import React from 'react';
 import '../styles/TechnicalSkills.css';
 
 const skills = {
-  'Frontend Technologies': ['HTML5', 'CSS3', 'JavaScript', 'React', 'Styled Components'],
-  'Design Tools': ['Figma', 'Canva', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
-  'CSS & Styling': ['Tailwind CSS', 'Styled Components'],
-  'Development Tools': ['VS Code', 'Vite', 'npm', 'Chrome DevTools'],
-  'UX/UI Skills': ['User Research', 'Wireframing', 'Prototyping'],
-  'Version Control & Collaboration': ['Git', 'GitHub'],
+  'Frontend Development': ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Responsive Design'],
+  'Styling & UI': ['Styled Components', 'Tailwind CSS', 'CSS3'],
+  'Development Tools': ['Git/GitHub', 'VS Code', 'Vite', 'npm', 'Chrome DevTools'],
+  'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop'],
+  'UX/UI Methods': ['User Research', 'Wireframing', 'Prototyping'],
+  'Backend & APIs': ['Node.js', 'RESTful APIs', 'JSON', 'API Integration']  // NEW SECTION
 };
 
 // Enhanced icon mapping with working URLs and proper fallbacks
@@ -118,6 +118,63 @@ const getIconPath = (tool) => {
     `)}`
   };
 
+  const getIconPath = (tool) => {
+  const iconMapping = {
+    // ... (keep all your existing mappings)
+    
+    // Backend & APIs - ADD THESE
+    'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    
+    'RESTful APIs': `data:image/svg+xml;base64,${btoa(`
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="4" width="20" height="3" rx="1" fill="#63f4fc"/>
+        <rect x="2" y="10" width="20" height="3" rx="1" fill="#63f4fc"/>
+        <rect x="2" y="16" width="20" height="3" rx="1" fill="#63f4fc"/>
+        <circle cx="6" cy="5.5" r="1" fill="#0a0a0a"/>
+        <circle cx="6" cy="11.5" r="1" fill="#0a0a0a"/>
+        <circle cx="6" cy="17.5" r="1" fill="#0a0a0a"/>
+        <path d="M10 5.5h8M10 11.5h8M10 17.5h8" stroke="#0a0a0a" stroke-width="1"/>
+      </svg>
+    `)}`,
+    
+    'JSON': `data:image/svg+xml;base64,${btoa(`
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="16" height="16" rx="2" stroke="#63f4fc" stroke-width="2" fill="none"/>
+        <text x="12" y="16" text-anchor="middle" fill="#63f4fc" font-size="10" font-weight="bold" font-family="monospace">{ }</text>
+        <circle cx="8" cy="8" r="1.5" fill="#d6fdff"/>
+        <circle cx="16" cy="8" r="1.5" fill="#d6fdff"/>
+      </svg>
+    `)}`,
+    
+    'API Integration': `data:image/svg+xml;base64,${btoa(`
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6" cy="12" r="3" stroke="#63f4fc" stroke-width="2" fill="none"/>
+        <circle cx="18" cy="12" r="3" stroke="#63f4fc" stroke-width="2" fill="none"/>
+        <path d="M9 12h6" stroke="#63f4fc" stroke-width="2"/>
+        <path d="M11 10l2 2-2 2" stroke="#63f4fc" stroke-width="2" fill="none"/>
+        <circle cx="6" cy="12" r="1" fill="#63f4fc"/>
+        <circle cx="18" cy="12" r="1" fill="#63f4fc"/>
+      </svg>
+    `)}`,
+    
+    'Responsive Design': `data:image/svg+xml;base64,${btoa(`
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="4" width="12" height="9" rx="1" stroke="#63f4fc" stroke-width="2" fill="none"/>
+        <rect x="15" y="7" width="7" height="12" rx="1" stroke="#d6fdff" stroke-width="2" fill="none"/>
+        <line x1="2" y1="11" x2="14" y2="11" stroke="#63f4fc" stroke-width="1"/>
+        <circle cx="18.5" cy="17" r="0.5" fill="#d6fdff"/>
+      </svg>
+    `)}`,
+    
+    'React.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    
+    'JavaScript (ES6+)': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    
+    'Git/GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    
+    // ... rest of your existing mappings
+  };
+
   return iconMapping[tool] || `data:image/svg+xml;base64,${btoa(`
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="3" y="3" width="18" height="18" rx="2" stroke="#63f4fc" stroke-width="2" fill="none"/>
@@ -128,6 +185,19 @@ const getIconPath = (tool) => {
     </svg>
   `)}`;
 };
+
+  return iconMapping[tool] || `data:image/svg+xml;base64,${btoa(`
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="3" width="18" height="18" rx="2" stroke="#63f4fc" stroke-width="2" fill="none"/>
+      <circle cx="12" cy="12" r="3" fill="#63f4fc"/>
+      <text x="12" y="16" text-anchor="middle" fill="#63f4fc" font-size="6" font-weight="bold">
+        ${tool.charAt(0).toUpperCase()}
+      </text>
+    </svg>
+  `)}`;
+};
+
+
 
 const TechnicalSkills = () => {
   return (

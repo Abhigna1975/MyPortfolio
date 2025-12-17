@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
 import ProfileImage from '../assets/Profile.jpg';
 
-const ResumePDF = '/Abhigna Resume.pdf';
+const ResumePDF = '/Abhigna_Resume.pdf';
 
 const Hero = ({ activeTab, setActiveTab }) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -104,7 +104,7 @@ const Hero = ({ activeTab, setActiveTab }) => {
                 <span className="color-2">Abhigna</span>
                 <span className="color-3"> Margam</span>
               </h2>
-              <p>UI/UX Designer | Graphic Designer</p>
+              <p>UI Engineer | Front-End Developer</p>
               
               {/* Social Links */}
               <div className="social-links">
@@ -152,8 +152,8 @@ const Hero = ({ activeTab, setActiveTab }) => {
                     <span className="title-small">Position</span>
                   </div>
                   <div className="job-title">
-                    <div>Web</div>
-                    <div>Designer</div>
+                    <div>UI / UX</div>
+                    <div>Developer</div>
                   </div>
                 </div>
                 

@@ -5,15 +5,15 @@ import clickMeGif from "../assets/clickme.gif";
 
 const Experiences = [
   {
-    title: "UI/UX Designer",
-    company: "Starteryou Inc., New York, NY",
+    title: "UI Engineer",
+    company: "Starteryou Inc., New York, NY (Remote)",
     date: "Feb 2025 – Present",
     points: [
-      "Handle all design needs for the startup - mobile app interfaces, web design, social media graphics, flyers and brand assets",
-      "Design user-centered mobile and web experiences using Figma and Canva",
-      "Maintain brand consistency across digital products and marketing materials",
-      "Conduct usability testing and iterate based on user feedback to improve product experience",
-      "Collaborate with cross-functional teams including developers and marketing to deliver cohesive solutions"
+      "Develop responsive mobile and web application interfaces using React.js, React Native, JavaScript, HTML5, and CSS3",
+      "Build and maintain reusable UI component library implementing design system specifications with focus on accessibility and performance",
+      "Translate Figma mockups into production-ready code, ensuring pixel-perfect implementation across devices and browsers",
+      "Integrate RESTful APIs and implement state management for seamless data flow and user interactions",
+      "Collaborate with backend engineers and product team in Agile environment to deliver scalable front-end solutions"
     ],
   },
   {
