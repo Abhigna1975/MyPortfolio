@@ -4,18 +4,18 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import clickMeGif from "../assets/clickme.gif";
 
 const Experiences = [
-  {
-    title: "UI Engineer",
-    company: "Starteryou Inc., New York, NY (Remote)",
-    date: "Feb 2025 – Present",
-    points: [
-      "Develop responsive mobile and web application interfaces using React.js, React Native, JavaScript, HTML5, and CSS3",
-      "Build and maintain reusable UI component library implementing design system specifications with focus on accessibility and performance",
-      "Translate Figma mockups into production-ready code, ensuring pixel-perfect implementation across devices and browsers",
-      "Integrate RESTful APIs and implement state management for seamless data flow and user interactions",
-      "Collaborate with backend engineers and product team in Agile environment to deliver scalable front-end solutions"
-    ],
-  },
+ {
+  title: "Product Designer & UI Engineer",
+  company: "Starteryou Inc., New York, NY (Remote)",
+  date: "Feb 2025 – Present",
+  points: [
+    "Lead end-to-end product design and development for mobile and web applications, from concept and prototyping through production implementation using React.js, React Native, and Figma",
+    "Design and build accessible, performance-optimized UI component library and design system, bridging design specifications with scalable front-end architecture",
+    "Own the design-to-code workflow: translate user needs into interactive prototypes, validate through testing, then implement pixel-perfect, responsive interfaces across platforms",
+    "Leverage AI tools to accelerate research synthesis, design iteration, and code generation while maintaining high standards for craft and user experience",
+    "Partner with cross-functional teams in Agile environment to shape product strategy, ensure technical feasibility, and deliver cohesive experiences balancing user needs with business goals"
+  ],
+},
   {
     title: "Classroom Teaching Assistant",
     company: "Sacred Heart University, Fairfield, CT",

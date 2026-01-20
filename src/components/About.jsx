@@ -3,8 +3,8 @@ import '../styles/About.css';
 
 const About = () => {
   const paragraph = [
-    "A UI Engineer at Starteryou developing mobile and web application interfaces using React.js, React Native, and modern JavaScript. I build responsive, accessible user interfaces by translating design specifications into production-ready code. Experienced with component architecture, RESTful API integration, and performance optimization across web and mobile platforms.",
-    "What sets me apart: you get a front-end engineer with strong design sensibility who bridges the gap between design and development, ensuring pixel-perfect implementations and seamless user experiences."
+    "A Product Designer and UI Engineer with expertise in end-to-end design execution—from problem definition through high-fidelity prototyping and development. I combine strong visual design fundamentals with hands-on coding ability in React.js and React Native, enabling rapid prototyping and seamless translation of design vision into production-ready experiences. Experienced with Figma, component systems, and leveraging frontier AI tools to accelerate design workflows and improve outcomes.",
+    "What sets me apart: you get a designer-developer hybrid who defaults to making and building. I bring design craft, technical implementation skills, and a growth mindset focused on creating measurable impact for users. I bridge design and engineering naturally, ensuring both beautiful and feasible solutions that ship."
 ];
   
   return (

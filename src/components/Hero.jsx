@@ -104,7 +104,7 @@ const Hero = ({ activeTab, setActiveTab }) => {
                 <span className="color-2">Abhigna</span>
                 <span className="color-3"> Margam</span>
               </h2>
-              <p>UI Engineer | Front-End Developer</p>
+              <p>Product Designer | UI Engineer</p>
               
               {/* Social Links */}
               <div className="social-links">
@@ -152,8 +152,8 @@ const Hero = ({ activeTab, setActiveTab }) => {
                     <span className="title-small">Position</span>
                   </div>
                   <div className="job-title">
-                    <div>UI / UX</div>
-                    <div>Developer</div>
+                    <div>Web</div>
+                    <div>Designer</div>
                   </div>
                 </div>
                 

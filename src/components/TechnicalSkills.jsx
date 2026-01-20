@@ -3,12 +3,12 @@ import React from 'react';
 import '../styles/TechnicalSkills.css';
 
 const skills = {
+  'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
+  'UX/UI Methods': ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing', 'Accessibility (WCAG)'],
   'Frontend Development': ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Responsive Design'],
   'Styling & UI': ['Styled Components', 'Tailwind CSS', 'CSS3'],
   'Development Tools': ['Git/GitHub', 'VS Code', 'Vite', 'npm', 'Chrome DevTools'],
-  'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop'],
-  'UX/UI Methods': ['User Research', 'Wireframing', 'Prototyping'],
-  'Backend & APIs': ['Node.js', 'RESTful APIs', 'JSON', 'API Integration']  // NEW SECTION
+  'Backend & APIs': ['Node.js', 'RESTful APIs', 'JSON', 'API Integration']
 };
 
 // Enhanced icon mapping with working URLs and proper fallbacks
