@@ -7,6 +7,10 @@
   color: rgb(255, 255, 255);
   position: relative;
   font-weight: 200;
+  position: relative;
+  top: -200px;
+  left: 50px;
+  
 }
 
 /* Rotated Title */
@@ -58,10 +62,11 @@
   margin-left: 120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   width: calc(100% - 120px);
   font-weight: 200;
 }
+
 
 /* Individual Project Block - Clean Layout */
 .project-block {
@@ -76,6 +81,7 @@
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   font-weight: 200;
+  width: 50%;
 }
 
 .project-block:hover {
@@ -93,6 +99,7 @@
   border-radius: 15px;
   margin-bottom: 12px;
   font-weight: 200;
+
 }
 
 /* Project Image */
@@ -124,7 +131,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0;
-  gap: 15px;
+  gap: 5px;
   min-height: auto;
   font-weight: 200;
 }
@@ -296,8 +303,8 @@
   
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 0;
-    width: 100%;
+    margin-left: 120px;
+    width:  calc(100% - 140px);
     gap: 20px;
     font-weight: 200;
   }
@@ -348,13 +355,14 @@
 @media (max-width: 480px) {
   .projects-container {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 0px;
   }
   
   .project-block {
     min-height: 260px;
     padding: 12px;
     font-weight: 200;
+    width: 100%;
   }
   
   .project-image-container {
@@ -368,13 +376,4 @@
   }
 }
 
-/* Projects Container - Grid Layout */
-.projects-container {
-  margin-left: 160px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  width: calc(100% - 180px);
-  font-weight: 200;
-}
 

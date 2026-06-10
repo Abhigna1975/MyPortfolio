@@ -1,5 +1,7 @@
 .experience-section {
   position: relative;
+  top: -190px;
+  left: 48px;
   width: 1420px;
   background-color: #000000;
   border-radius: 12px;
@@ -49,6 +51,7 @@
   margin-left: 160px; /* Increased from 150px to move experience cards further right */
   padding-right: 0px;
   font-weight: 200;
+  width: 71.5%;
 }
 
 .experience-card {

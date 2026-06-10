@@ -5,26 +5,24 @@ import clickMeGif from "../assets/clickme.gif";
 
 const Experiences = [
  {
-  title: "Product Designer & UI Engineer",
-  company: "Starteryou Inc., New York, NY (Remote)",
-  date: "Feb 2025 – Present",
+  title: "Lead UI/UX Designer",
+  company: "Starteryou Inc",
+  date: "Feb 2025 – Feb 2026",
   points: [
-    "Lead end-to-end product design and development for mobile and web applications, from concept and prototyping through production implementation using React.js, React Native, and Figma",
-    "Design and build accessible, performance-optimized UI component library and design system, bridging design specifications with scalable front-end architecture",
-    "Own the design-to-code workflow: translate user needs into interactive prototypes, validate through testing, then implement pixel-perfect, responsive interfaces across platforms",
-    "Leverage AI tools to accelerate research synthesis, design iteration, and code generation while maintaining high standards for craft and user experience",
-    "Partner with cross-functional teams in Agile environment to shape product strategy, ensure technical feasibility, and deliver cohesive experiences balancing user needs with business goals"
+    "Led end-to-end UX design for mobile and web platform: user interviews, personas, journey maps, task flows, and high-fidelity Figma prototypes aligned with enterprise application standards.",
+    "Facilitated design workshops and reviews; collaborated with product and engineering to translate UX designs into successful implementations.",
+    "Built and maintained design system with reusable UI components ensuring brand consistency and WCAG accessibility compliance across all touchpoints."
   ],
 },
   {
-    title: "Classroom Teaching Assistant",
-    company: "Sacred Heart University, Fairfield, CT",
-    date: "May 2024 - July 2024",
+    title: "Design Analyst",
+    company: "Nordstrom",
+    date: "Mar 2023 – Dec 2024",
     points: [
-      "Assisted instructors with course planning and student engagement",
-      "Led tutoring sessions and explained technical concepts clearly",
-      "Provided constructive and helpful feedback to support student learning",
-      "Encouraged collaboration and built a strong learning environment",
+      "Led end-to-end UX design for enterprise e-commerce platform (millions of users) from heuristic evaluations and usability testing through wireframing, prototyping, and final delivery.",
+      "Created user personas, customer journey maps, task flows, and information architecture; applied data-driven insights to improve conversion rate by 12%.",
+      "Maintained design system used by 20+ product teams; ensured visual consistency, scalability, and WCAG/ADA compliance across web and mobile in Agile/Scrum environment.",
+      "Presented and justified design decisions to stakeholders; applied interaction and motion design principles to enhance UX across all platforms.",
     ],
   },
   

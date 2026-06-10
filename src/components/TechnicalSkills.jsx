@@ -3,12 +3,10 @@ import React from 'react';
 import '../styles/TechnicalSkills.css';
 
 const skills = {
-  'Design Tools': ['Figma', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
-  'UX/UI Methods': ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing', 'Accessibility (WCAG)'],
-  'Frontend Development': ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Responsive Design'],
-  'Styling & UI': ['Styled Components', 'Tailwind CSS', 'CSS3'],
-  'Development Tools': ['Git/GitHub', 'VS Code', 'Vite', 'npm', 'Chrome DevTools'],
-  'Backend & APIs': ['Node.js', 'RESTful APIs', 'JSON', 'API Integration']
+  'Design Tools': ['Adobe XD ','InVision',' Miro','Figma','Sketch','Adobe Photoshop'],
+  'UX/UI Methods': ['Heuristic Evaluations', 'User Interviews & Surveys', 'User Personas & Journey Maps', 'Information Architecture', 'Interaction & Motion Design',' Design Systems & Component Libraries'],
+  'Research & Strategy': ['Stakeholder Collaboration', 'Business Requirements Analysis  ', 'Cross-functional Team Collaboration', 'Agile / Scrum'],
+  'Accessibility & Standards': ['WCAG 2.1 / ADA Compliance', 'Inclusive Design', 'Component Library Governance', ' Enterprise Application Design'],
 };
 
 // Enhanced icon mapping with working URLs and proper fallbacks

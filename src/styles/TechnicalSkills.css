@@ -18,6 +18,8 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-weight: 200;
+  top: -150px;
+  left: 50px;
 }
 
 /* Large title (Technical) - positioned safely */
@@ -34,7 +36,7 @@
   margin: 0;
   z-index: 2;
   left: -20px;
-  top: 110px; /* Further reduced from 80px */
+  top: -110px; /* Further reduced from 80px */
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: center;
   white-space: nowrap;
@@ -59,7 +61,7 @@
 
 .skills-content {
   margin-left: 120px;
-  padding-right: 20px;
+  padding-right: 60px;
   max-width: calc(100% - 140px);
   box-sizing: border-box;
   padding-top: 10px; /* Further reduced top padding */
@@ -75,8 +77,8 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px; /* Further reduced from 12px */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px; /* Further reduced from 12px */
   justify-content: center;
   align-items: start;
   overflow-x: hidden;
@@ -165,18 +167,18 @@
   }
   
   .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px; /* Slightly increased for better spacing in 3-column layout */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px; /* Slightly increased for better spacing in 3-column layout */
     font-weight: 200;
   }
   
-  .skill-category:nth-child(1) { grid-column: 1; grid-row: 1; }
+  /* .skill-category:nth-child(1) { grid-column: 1; grid-row: 1; }
   .skill-category:nth-child(2) { grid-column: 2; grid-row: 1; }
   .skill-category:nth-child(3) { grid-column: 3; grid-row: 1; }
   .skill-category:nth-child(4) { grid-column: 1; grid-row: 2; }
   .skill-category:nth-child(5) { grid-column: 2; grid-row: 2; }
   .skill-category:nth-child(6) { grid-column: 3; grid-row: 2; }
-}
+} */
 
 /* Responsive adjustments for tablets */
 @media (max-width: 1024px) {
@@ -209,7 +211,7 @@
   
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 0px;
     font-weight: 200;
   }
   
@@ -261,8 +263,8 @@
   }
   
   .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 12px; /* Reduced gap */
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px; /* Reduced gap */
     max-width: 100%;
     font-weight: 200;
   }
@@ -305,14 +307,14 @@
   }
   
   .skill-category h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-top: 0; /* Removed top margin */
     margin-bottom: 6px;
     font-weight: 200;
   }
   
   .skill-category li {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 4px; /* Reduced */
     font-weight: 200;
   }
@@ -429,4 +431,4 @@ section {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-}
+}}

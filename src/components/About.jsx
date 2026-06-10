@@ -3,8 +3,7 @@ import '../styles/About.css';
 
 const About = () => {
   const paragraph = [
-    "A Product Designer and UI Engineer with expertise in end-to-end design execution—from problem definition through high-fidelity prototyping and development. I combine strong visual design fundamentals with hands-on coding ability in React.js and React Native, enabling rapid prototyping and seamless translation of design vision into production-ready experiences. Experienced with Figma, component systems, and leveraging frontier AI tools to accelerate design workflows and improve outcomes.",
-    "What sets me apart: you get a designer-developer hybrid who defaults to making and building. I bring design craft, technical implementation skills, and a growth mindset focused on creating measurable impact for users. I bridge design and engineering naturally, ensuring both beautiful and feasible solutions that ship."
+    "I'm a UI/UX Designer with 5+ years defining the look, feel, and behavior of enterprise applications. I specialize in user research, wireframing, high-fidelity prototyping, and building scalable design systems — translating complex business requirements into intuitive, accessible experiences. I work closely with Business Analysts and Technical Leads to bridge strategy and visual design. I bring deep expertise in heuristic evaluations, usability testing, and synthesizing user insights into design decisions that drive measurable business outcomes."
 ];
   
   return (

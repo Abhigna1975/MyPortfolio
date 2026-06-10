@@ -9,6 +9,8 @@
   text-align: left;
   color: #ffffff;
   padding: 2rem 0;
+  top: -240px;
+  left: 50px;
 }
 
 /* Rotated Title for Education */
@@ -51,7 +53,7 @@
   margin: 0;
   z-index: 1;
   left: -50px;
-  top: 120px;
+  top: 130px;
 }
 
 .education-content {
@@ -81,22 +83,49 @@
   font-weight: 200;
 }
 
-.education-entry .degree {
+.education-entry .degree1 {
   font-weight: 200;
   font-size: 1.5rem;
   margin-top: 0rem;
   margin-bottom: 0.4rem;
   color: #63f4fc;
+  position: absolute;
+  top: 0px;
+  left: 195px;
 }
 
-.education-entry .institution {
+.education-entry .degree2 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  margin-top: 0rem;
+  margin-bottom: 0.4rem;
+  color: #63f4fc;
+  position: absolute;
+  top: 50px;
+  left: 195px;
+}
+
+.education-entry .institution1 {
   margin-top: 0rem;
   font-style: italic;
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 200;
+  position: absolute;
+  top: 35px;
+  left: 195px;
 }
-
+.education-entry .institution2 {
+  margin-top: 0rem;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 200;
+  position: absolute;
+  top: 115px;
+  left: 195px;
+}
 .education-entry .date {
   margin-top: 0rem;
   font-style: italic;

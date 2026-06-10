@@ -4,16 +4,16 @@ import "../styles/Education.css";
 
 const EducationList = [
   {
-    degree: "Master of Science in Computer Science & Information Technology",
-    institution: "Sacred Heart University, Fairfield, CT",
+    degree1: "Master of Science in Computer Science & Information Technology",
+    institution1: "Sacred Heart University, CT, USA",
     date: "Aug 2023 – Dec 2024",
-    highlights: ["GPA: 8.89/10.0"],
+    highlights: [],
   },
   {
-    degree: "Bachelor of Engineering in Computer Science Engineering",
-    institution: "AAR Mahaveer Engineering College, Hyderabad, India",
+    degree2: "Bachelor of Engineering in Computer Science Engineering",
+    institution2: "AAR Mahaveer Engineering College, HYD, INDIA",
     date: "Jun 2019 – Jul 2023",
-    highlights: ["GPA: 7.25/10.0"],
+    highlights: [],
   }
 ];
 
@@ -29,9 +29,11 @@ const Education = () => {
       <div className="education-content">
         {EducationList.map((edu, idx) => (
           <div className="education-entry" key={idx}>
-            <h3 className="degree">{edu.degree}</h3>
-            <h4 className="institution">{edu.institution}</h4>
-            <p className="date">{edu.date}</p>
+            <h3 className="degree1">{edu.degree1}</h3>
+            <h3 className="degree2">{edu.degree2}</h3>
+            <h4 className="institution1">{edu.institution1}</h4>
+            <h4 className="institution2">{edu.institution2}</h4>
+            {/* <p className="date">{edu.date}</p> */}
             {edu.highlights.length > 0 && (
               <div className="highlight-text">
                 {edu.highlights.map((point, i) => (

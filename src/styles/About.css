@@ -9,13 +9,15 @@
   align-items: flex-start;
   text-align: left;
   padding: 2rem 100px 2rem 2rem; /* Added 100px right padding */
-  margin-top: 3rem;
+  margin-top: 0rem;
   margin-bottom: 3rem;
   position: relative;
+  top: -250px;
+  left: 46px;
 }
 
 .about-content {
-  margin-left: 180px;
+  margin-left: 200px;
   flex: 1;
   max-width: calc(100% - 280px); /* Adjusted to account for left margin and right padding */
   padding-top: 1rem;
@@ -38,7 +40,7 @@
 }
 
 .about-large {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 200;
   color: transparent;
   -webkit-text-stroke: 0.4px #fff;
@@ -47,7 +49,7 @@
   margin: 0;
   top: -30px;
   left: 0%;
-  letter-spacing: -10px;
+  letter-spacing: 0px;
   position: relative;
 }
 
@@ -69,12 +71,13 @@
 .about-content p {
   font-size: 1.2rem;
   font-weight: 200;
-  line-height: 1.8;
-  color: #e0e0e0;
+  line-height: 2.5;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   text-align: justify;
-  word-spacing: 0.1rem;
+  word-spacing: 0rem;
   margin-top: 0;
+  width: 80%;
 }
 
 .about-content ul {

@@ -100,13 +100,13 @@ const Hero = ({ activeTab, setActiveTab }) => {
                 <span className="color-3">,</span>
               </h1>
               <h2>
-                <span className="color-1">I'm </span>
-                <span className="color-2">Abhigna</span>
-                <span className="color-3"> Margam</span>
+                <span className="color-4">I'm </span>
+                <span className="color-5">Abhigna</span>
+                <span className="color-6"> Margam</span>
               </h2>
-              <p>Product Designer | UI Engineer</p>
+              <p className='head-text'>UI/UX Designer | Visual Design & User Experience</p>
               
-              {/* Social Links */}
+              {/* Social Links
               <div className="social-links">
                 <a 
                   href="https://www.linkedin.com/in/abhigna-margam-71b2a6250/"
@@ -142,7 +142,7 @@ const Hero = ({ activeTab, setActiveTab }) => {
                   </svg>
                   Resume
                 </a>
-              </div>
+              </div> */}
               
               {/* Slogan content */}
               <div className="slogan">
@@ -152,7 +152,7 @@ const Hero = ({ activeTab, setActiveTab }) => {
                     <span className="title-small">Position</span>
                   </div>
                   <div className="job-title">
-                    <div>Web</div>
+                    <div>UI/UX</div>
                     <div>Designer</div>
                   </div>
                 </div>
@@ -163,15 +163,15 @@ const Hero = ({ activeTab, setActiveTab }) => {
                     <span className="title-small">Slogan</span>
                   </div>
                   <div className="tagline">
-                    <div>Where pixels</div>
-                    <div>meet profits.</div>
+                    <div>Where research</div>
+                    <div>meets great design.</div>
                   </div>
                 </div>
               </div>
             </div>
             
             {/* Profile image beside all content */}
-            <img src={ProfileImage} alt="Abhigna Margam" className="profile-image" />
+            {/* <img src={ProfileImage} alt="Abhigna Margam" className="profile-image" /> */}
           </>
         );
     }
