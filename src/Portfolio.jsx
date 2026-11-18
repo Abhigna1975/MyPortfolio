@@ -26,6 +26,9 @@ const work = [
       'Designed form, plan selection and payment screens for desktop and mobile',
       'Handed off a clickable prototype and specs, then reviewed the build against it',
     ],
+    img: '/work/enrolment-flow.jpg',
+    alt: 'Four phone screens of the enrolment flow: choose course, your details, payment, enrolled',
+    note: 'Redrawn for portfolio, client data removed',
     tone: 'clay',
   },
   {
@@ -39,6 +42,9 @@ const work = [
       'Documented the tokens so designers and developers use the same names',
       'Rolled the system out across the React codebase, screen by screen',
     ],
+    img: '/work/design-tokens.jpg',
+    alt: 'Design token sheet with type scale, spacing, four radii, colors and components',
+    note: 'Redrawn for portfolio',
     tone: 'sage',
   },
   {
@@ -52,11 +58,14 @@ const work = [
       'Created design system guidelines and a reusable component library',
       'Ran usability tests and iterated on feedback and analytics',
     ],
+    img: '/work/starteryou-events.jpg',
+    alt: 'Starteryou events: student event list, event detail with RSVP, and admin events dashboard',
+    note: 'Redrawn for portfolio, sample data',
     tone: 'ink',
   },
   {
     tag: 'Visual design',
-    title: 'Jewelry storefront: mood to type system to build',
+    title: 'Maison Dorée: a luxury jewelry storefront',
     role: 'Visual design, layout, typography',
     tools: ['Figma', 'HTML', 'CSS'],
     body: 'A full visual identity for a product storefront: mood, layout grid and type system designed in Figma, then built in HTML and CSS to match.',
@@ -65,25 +74,14 @@ const work = [
       'Layout grid and type scale for product and story pages',
       'Built the design so the live page matches the file',
     ],
-    links: [['View code', 'https://github.com/Abhigna1975/jewelry-site']],
-    tone: 'rose',
-  },
-  {
-    tag: 'E-commerce',
-    title: 'Popnwrap: a gift shop with a simple path to purchase',
-    role: 'UX and UI design, front end',
-    tools: ['Figma', 'React', 'Responsive design'],
-    body: 'A small gift brand selling balloon bouquets. I designed the browse, product and cart flow so a first time visitor can find a gift and check out quickly on any device.',
-    points: [
-      'Product grid and cart flow designed mobile first',
-      'Soft, on brand palette that keeps the products the focus',
-      'Built in React and live on the web',
-    ],
     links: [
-      ['View live', 'https://popnwrap.vercel.app/'],
-      ['View code', 'https://github.com/Abhigna1975/Popnwrap'],
+      ['View live', 'https://abhigna1975.github.io/jewelry-site/'],
+      ['View code', 'https://github.com/Abhigna1975/jewelry-site'],
     ],
-    tone: 'blush',
+    img: '/work/maison-doree.jpg',
+    alt: 'Maison Doree jewelry site: home page, featured pendant and collections grid',
+    note: 'Live site',
+    tone: 'rose',
   },
 ];
 
@@ -219,28 +217,23 @@ export default function Portfolio() {
           <div className="section-head">
             <p className="kicker">Selected work</p>
             <h2>Case studies</h2>
-            <p className="section-sub">How I work through a problem, from first question to shipped screen.</p>
+            <p className="section-sub">Four projects across education, startups and e-commerce. Click any image to see it full size.</p>
           </div>
           <div className="work-list">
             {work.map((w, i) => (
               <Reveal as="article" key={w.title} className={`case tone-${w.tone}`}>
-                <div className="case-art" aria-hidden="true">
-                  <span className="case-num">{String(i + 1).padStart(2, '0')}</span>
-                  <div className="mock">
-                    <div className="mock-bar"><i /><i /><i /></div>
-                    <div className="mock-body">
-                      <div className="mock-line w60" />
-                      <div className="mock-line w40" />
-                      <div className="mock-grid"><b /><b /><b /></div>
-                      <div className="mock-btn" />
-                    </div>
-                  </div>
-                </div>
+                <a className="case-art" href={w.img} target="_blank" rel="noopener noreferrer" aria-label={`Open full size: ${w.title}`}>
+                  <img src={w.img} alt={w.alt} loading="lazy" width="2000" height="1375" />
+                  <span className="case-note">{String(i + 1).padStart(2, '0')} · {w.note}</span>
+                </a>
                 <div className="case-text">
+                  <div className="case-main">
                   <p className="case-tag">{w.tag}</p>
                   <h3>{w.title}</h3>
                   <p className="case-role">{w.role}</p>
                   <p>{w.body}</p>
+                  </div>
+                  <div className="case-more">
                   <ul>{w.points.map((p) => <li key={p}>{p}</li>)}</ul>
                   <div className="chips">{w.tools.map((t) => <span key={t}>{t}</span>)}</div>
                   {w.links && (
@@ -250,6 +243,7 @@ export default function Portfolio() {
                       ))}
                     </div>
                   )}
+                  </div>
                 </div>
               </Reveal>
             ))}
