@@ -69,36 +69,6 @@ const work = [
     alt: 'Maison Doree jewelry site: home page, featured pendant and collections grid',
     tone: 'rose',
   },
-  {
-    tag: 'Education product',
-    title: 'Enrolment and payment flow for a student portal',
-    role: 'UX research, flows, wireframes, high fidelity prototype',
-    tools: ['Figma', 'Prototyping', 'React'],
-    body: 'For a coding academy\'s student portal, I designed how a student goes from choosing a course to enrolling and paying. I mapped the journey, wireframed each step, and prototyped the flow in Figma before it was built.',
-    points: [
-      'Mapped the enrolment journey and cut it into clear, single purpose steps',
-      'Designed form, plan selection and payment screens for desktop and mobile',
-      'Handed off a clickable prototype and specs, then reviewed the build against it',
-    ],
-    img: '/work/enrolment-flow.jpg',
-    alt: 'Four phone screens of the enrolment flow: choose course, your details, payment, enrolled',
-    tone: 'clay',
-  },
-  {
-    tag: 'Design system',
-    title: 'A design system built on tokens',
-    role: 'Design system, components, accessibility',
-    tools: ['Figma', 'Design tokens', 'React'],
-    body: 'I built a Figma design system with a component library, typography, grid and WCAG compliant interaction patterns, all driven by a small set of design tokens.',
-    points: [
-      'One typeface and four corner radii, applied to every component',
-      'Documented the tokens so designers and developers use the same names',
-      'Components meet WCAG contrast and focus guidelines',
-    ],
-    img: '/work/design-tokens.jpg',
-    alt: 'Design token sheet with type scale, spacing, four radii, colors and components',
-    tone: 'sage',
-  },
 ];
 
 const process = [
@@ -227,7 +197,7 @@ export default function Portfolio() {
           <div className="section-head">
             <p className="kicker">Selected work</p>
             <h2>Case studies</h2>
-            <p className="section-sub">Five projects across education, a startup and e-commerce. Click any image to see it full size.</p>
+            <p className="section-sub">Three projects across a startup and e-commerce. Click any image to see it full size.</p>
           </div>
           <div className="work-list">
             {work.map((w, i) => (
