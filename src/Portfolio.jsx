@@ -64,15 +64,15 @@ const work = [
     tone: 'ink',
   },
   {
-    tag: 'Visual design',
-    title: 'Maison Dorée: a luxury jewelry storefront',
-    role: 'Visual design, layout, typography',
-    tools: ['Figma', 'HTML', 'CSS'],
-    body: 'A full visual identity for a product storefront: mood, layout grid and type system designed in Figma, then built in HTML and CSS to match.',
+    tag: 'Responsive build',
+    title: 'Maison Dorée: taking a luxury storefront to mobile',
+    role: 'Front end build, responsive and mobile UI',
+    tools: ['HTML', 'CSS', 'Responsive design'],
+    body: 'I rebuilt a desktop only luxury jewelry template (credit: TemplateMo) as a component based HTML and CSS site, then designed and built its phone and tablet layouts so every section works on a small screen.',
     points: [
-      'Moodboard and visual direction',
-      'Layout grid and type scale for product and story pages',
-      'Built the design so the live page matches the file',
+      'Split the page into reusable section components',
+      'Designed the mobile layouts: stacked hero, two column collection grid, full width forms',
+      'Kept the serif type and gold accents consistent at every screen size',
     ],
     links: [
       ['View live', 'https://abhigna1975.github.io/jewelry-site/'],
@@ -80,7 +80,7 @@ const work = [
     ],
     img: '/work/maison-doree.jpg',
     alt: 'Maison Doree jewelry site: home page, featured pendant and collections grid',
-    note: 'Live site',
+    note: 'Live site, desktop and mobile',
     tone: 'rose',
   },
 ];
@@ -217,7 +217,7 @@ export default function Portfolio() {
           <div className="section-head">
             <p className="kicker">Selected work</p>
             <h2>Case studies</h2>
-            <p className="section-sub">Four projects across education, startups and e-commerce. Click any image to see it full size.</p>
+            <p className="section-sub">Four projects across education, a startup and retail. Click any image to see it full size.</p>
           </div>
           <div className="work-list">
             {work.map((w, i) => (
