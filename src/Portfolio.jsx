@@ -28,7 +28,6 @@ const work = [
     ],
     img: '/work/enrolment-flow.jpg',
     alt: 'Four phone screens of the enrolment flow: choose course, your details, payment, enrolled',
-    note: 'Redrawn for portfolio, client data removed',
     tone: 'clay',
   },
   {
@@ -44,7 +43,6 @@ const work = [
     ],
     img: '/work/design-tokens.jpg',
     alt: 'Design token sheet with type scale, spacing, four radii, colors and components',
-    note: 'Redrawn for portfolio',
     tone: 'sage',
   },
   {
@@ -58,9 +56,9 @@ const work = [
       'Built and maintain the Figma design system and component library',
       'Ran user interviews and turned insights into personas and journey maps',
     ],
+    links: [['View live', 'https://www.starteryou.com/']],
     img: '/work/starteryou-events.jpg',
     alt: 'Starteryou events: student event list, event detail with RSVP, and admin events dashboard',
-    note: 'Redrawn for portfolio, sample data',
     tone: 'ink',
   },
   {
@@ -80,7 +78,6 @@ const work = [
     ],
     img: '/work/maison-doree.jpg',
     alt: 'Maison Doree jewelry site: home page, featured pendant and collections grid',
-    note: 'Live site, desktop and mobile',
     tone: 'rose',
   },
   {
@@ -100,7 +97,6 @@ const work = [
     ],
     img: '/work/popnwrap.jpg',
     alt: 'Popnwrap gift shop home page with balloon bouquet products',
-    note: 'Live site',
     tone: 'rose',
   },
 ];
@@ -237,8 +233,7 @@ export default function Portfolio() {
             {work.map((w, i) => (
               <Reveal as="article" key={w.title} className={`case tone-${w.tone}`}>
                 <a className="case-art" href={w.img} target="_blank" rel="noopener noreferrer" aria-label={`Open full size: ${w.title}`}>
-                  <img src={w.img} alt={w.alt} loading="lazy" width="2000" height="1375" />
-                  <span className="case-note">{String(i + 1).padStart(2, '0')} · {w.note}</span>
+                  <img src={w.img} alt={w.alt} loading="lazy" />
                 </a>
                 <div className="case-text">
                   <div className="case-main">
