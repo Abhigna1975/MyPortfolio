@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import Profile from './assets/Profile.jpg';
 import './portfolio.css';
 
-const RESUME = '/Abhigna_Margam_Resume.pdf';
-const EMAIL = 'abhignamargam12@gmail.com';
+const RESUME = '/Abhigna_Resume.pdf';
+const EMAIL = 'abhignamargam26@gmail.com';
 const GITHUB = 'https://github.com/Abhigna1975';
 
 const nav = [
@@ -33,14 +33,14 @@ const work = [
   },
   {
     tag: 'Design system',
-    title: 'Design tokens that made one product feel like one product',
-    role: 'Visual system, tokens, rollout',
+    title: 'A design system built on tokens',
+    role: 'Design system, components, accessibility',
     tools: ['Figma', 'Design tokens', 'React'],
-    body: 'For the same portal, I defined a small set of design tokens so every screen shares one type and shape language, then rolled it out across the codebase.',
+    body: 'I built a Figma design system with a component library, typography, grid and WCAG compliant interaction patterns, all driven by a small set of design tokens.',
     points: [
       'One typeface and four corner radii, applied to every component',
       'Documented the tokens so designers and developers use the same names',
-      'Rolled the system out across the React codebase, screen by screen',
+      'Components meet WCAG contrast and focus guidelines',
     ],
     img: '/work/design-tokens.jpg',
     alt: 'Design token sheet with type scale, spacing, four radii, colors and components',
@@ -50,13 +50,13 @@ const work = [
   {
     tag: 'Startup, web and mobile',
     title: 'Starteryou: owning design for a student startup',
-    role: 'Lead designer, end to end',
+    role: 'UI/UX designer, end to end',
     tools: ['Figma', 'Adobe XD', 'User testing'],
-    body: 'As the lead designer I owned every screen: the mobile app, the website, the admin dashboard and the brand assets, and I worked with engineering to ship them.',
+    body: 'I design the interfaces, task flows and high fidelity prototypes in Figma for the Starteryou mobile app and web platform, and hand off specs to engineering.',
     points: [
       'Designed the events feature from user flows to final UI and admin dashboard',
-      'Created design system guidelines and a reusable component library',
-      'Ran usability tests and iterated on feedback and analytics',
+      'Built and maintain the Figma design system and component library',
+      'Ran user interviews and turned insights into personas and journey maps',
     ],
     img: '/work/starteryou-events.jpg',
     alt: 'Starteryou events: student event list, event detail with RSVP, and admin events dashboard',
@@ -83,6 +83,26 @@ const work = [
     note: 'Live site, desktop and mobile',
     tone: 'rose',
   },
+  {
+    tag: 'E-commerce',
+    title: 'Popnwrap: a simpler path to checkout',
+    role: 'Full UX lifecycle',
+    tools: ['Figma', 'A/B testing', 'React'],
+    body: 'A gift shop selling balloon bouquets. I led the full UX lifecycle, from research, personas and journey maps to wireframes and prototypes, and A/B tested the checkout.',
+    points: [
+      'Research, personas and journey maps for first time gift buyers',
+      'Wireframed and prototyped the browse, product and cart flow',
+      'A/B testing improved checkout completion by 22%',
+    ],
+    links: [
+      ['View live', 'https://popnwrap.vercel.app/'],
+      ['View code', 'https://github.com/Abhigna1975/Popnwrap'],
+    ],
+    img: '/work/popnwrap.jpg',
+    alt: 'Popnwrap gift shop home page with balloon bouquet products',
+    note: 'Live site',
+    tone: 'rose',
+  },
 ];
 
 const process = [
@@ -96,44 +116,39 @@ const process = [
 
 const experience = [
   {
-    title: 'Senior UI/UX Designer',
-    company: 'S9 Technologies',
-    when: 'Feb 2026 to Present',
-    points: [
-      'Designed the enrolment and payment flow for a coding academy student portal, from wireframes to high fidelity prototypes.',
-      'Built a design token system (one typeface, four radii) and rolled it out across the React codebase.',
-      'Redesigned storefront pages for a D2C grocery brand to match the live Shopify store pixel for pixel at desktop, tablet and mobile widths.',
-      'Designed the in-app AI assistant for a gardening mobile app, with a curated answer bank so it only answers from verified content.',
-    ],
-  },
-  {
-    title: 'Lead UI/UX Designer',
-    company: 'Starteryou',
-    when: 'Apr 2025 to Feb 2026',
-    points: [
-      'Owned design for the startup: mobile app screens, web pages, social graphics and brand assets.',
-      'Designed the events feature end to end, from user flows to final screens and an admin dashboard, and worked with engineering to ship it.',
-      'Created design system guidelines and a component library, ran usability tests, and iterated on feedback and analytics.',
-    ],
-  },
-  {
     title: 'UI/UX Designer',
-    company: 'Nordstrom',
-    when: 'Jun 2022 to Mar 2025',
+    company: 'Starteryou',
+    when: 'Feb 2025 to Present',
     points: [
-      'Designed customer facing e-commerce experiences across desktop and mobile for a large scale retail platform.',
-      'Contributed to a shared design system and UI component library used across product teams, with a focus on consistency and WCAG accessibility.',
-      'Ran usability tests and used analytics and customer feedback to improve layouts and flows.',
+      'Design intuitive user interfaces, wireframes, task flows and interactive high fidelity prototypes in Figma for a mobile app and web platform.',
+      'Conduct user interviews and turn insights into personas and journey maps that drive design decisions and product priorities.',
+      'Build and maintain a Figma design system and reusable component library that keeps the brand consistent and meets WCAG standards.',
+      'Facilitate design workshops and reviews, and partner with product and engineering to hand off specs and make sure designs ship as intended.',
+      'Use AI tools (Claude, GitHub Copilot, Gemini) to speed up ideation and prototyping.',
+    ],
+  },
+  {
+    title: 'UI/UX Designer, Enterprise E-Commerce',
+    company: 'Nordstrom',
+    when: 'Mar 2022 to Dec 2024',
+    points: [
+      'Led UX design for an e-commerce platform serving millions of users, delivering wireframes, prototypes and polished UI across web and mobile in Figma and Adobe XD.',
+      'Ran usability testing and heuristic evaluations, and applied data and customer feedback to design changes that improved conversion by 12%.',
+      'Created personas, journey maps, task flows and information architecture that guided feature priorities and front end implementation.',
+      'Maintained a design system used by 20+ product teams, ensuring consistency, scalability and WCAG/ADA compliance.',
+      'Presented and justified design decisions to stakeholders in an Agile/Scrum team of product managers, engineers and researchers.',
     ],
   },
 ];
 
 const skills = [
-  ['Design tools', ['Figma', 'Adobe XD', 'Sketch', 'Photoshop', 'Illustrator', 'Canva']],
-  ['UX methods', ['User research', 'Personas', 'Journey maps', 'Information architecture', 'Wireframing', 'Prototyping', 'Usability testing']],
-  ['Systems', ['Design systems', 'Design tokens', 'Component libraries', 'Accessibility (WCAG)', 'Responsive design']],
-  ['Build and handoff', ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Git']],
-  ['AI tools', ['ChatGPT', 'Claude', 'GitHub Copilot']],
+  ['Design tools', ['Figma', 'Adobe XD', 'Sketch', 'Miro', 'InVision']],
+  ['Core focus', ['Intuitive user interfaces', 'Wireframing', 'Interactive prototyping', 'Task flows', 'Information architecture']],
+  ['UX research', ['User interviews', 'Surveys', 'Usability testing', 'Heuristic evaluations', 'Personas', 'Journey maps']],
+  ['Design systems and accessibility', ['Component libraries', 'WCAG/ADA', 'Interaction and motion design']],
+  ['Development', ['HTML', 'CSS', 'React', 'Java']],
+  ['Collaboration', ['Agile/Scrum', 'Stakeholder management', 'Design workshops']],
+  ['AI tools', ['Claude', 'GitHub Copilot', 'Gemini', 'Prompt engineering']],
 ];
 
 function useActiveSection() {
@@ -190,9 +205,8 @@ export default function Portfolio() {
             <p className="eyebrow"><span className="dot" /> UI/UX Designer · 4+ years</p>
             <h1>Designing interfaces that feel <em>obvious</em> to use.</h1>
             <p className="lede">
-              I'm Abhigna, a UI/UX designer who takes products from research and wireframes to polished,
-              high fidelity prototypes in Figma and Adobe XD. I've designed for retail at Nordstrom, led design
-              at a startup, and now design for client products in education, e-commerce and mobile.
+              I'm Abhigna, a UI/UX designer who designs intuitive interfaces, wireframes and interactive prototypes in Figma and Adobe XD
+              for web and mobile. I own the full lifecycle, from research to developer handoff, and I build in React, so designs ship as built.
             </p>
             <div className="cta-row">
               <a href="#work" className="btn primary">See my work</a>
@@ -200,15 +214,15 @@ export default function Portfolio() {
             </div>
             <ul className="stats">
               <li><strong>4+</strong><span>years designing</span></li>
-              <li><strong>3</strong><span>companies, from enterprise to startup</span></li>
-              <li><strong>Web + mobile</strong><span>research to handoff</span></li>
+              <li><strong>+12%</strong><span>conversion at Nordstrom</span></li>
+              <li><strong>20+</strong><span>teams on my design system</span></li>
             </ul>
           </div>
           <figure className="hero-photo">
             <img src={Profile} alt="Abhigna Margam" width="809" height="809" />
             <figcaption>
-              <span>Based in Dallas-Fort Worth, TX</span>
-              <span>Open to relocation</span>
+              <span>Based in Denton, TX</span>
+              <span>Open to Los Angeles, CA</span>
             </figcaption>
           </figure>
         </section>
@@ -217,7 +231,7 @@ export default function Portfolio() {
           <div className="section-head">
             <p className="kicker">Selected work</p>
             <h2>Case studies</h2>
-            <p className="section-sub">Four projects across education, a startup and retail. Click any image to see it full size.</p>
+            <p className="section-sub">Five projects across education, a startup and e-commerce. Click any image to see it full size.</p>
           </div>
           <div className="work-list">
             {work.map((w, i) => (
@@ -311,10 +325,7 @@ export default function Portfolio() {
               </div>
               <div>
                 <h3>Certifications</h3>
-                <p>UX Designer Certificate</p>
-                <p>Front End Development Libraries</p>
-                <p>Python for Data Science</p>
-                <p>Communication Skills</p>
+                <p>Google UX Design Professional Certificate</p>
               </div>
             </div>
           </div>
