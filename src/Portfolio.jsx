@@ -166,7 +166,7 @@ function Reveal({ children, className = '', as: Tag = 'div' }) {
   const [shown, setShown] = useState(false);
   useEffect(() => {
     if (!el) return;
-    const io = new IntersectionObserver(([e]) => e.isIntersecting && (setShown(true), io.disconnect()), { threshold: 0.12 });
+    const io = new IntersectionObserver(([e]) => e.isIntersecting && (setShown(true), io.disconnect()), { threshold: 0, rootMargin: '0px 0px 200px 0px' });
     io.observe(el);
     return () => io.disconnect();
   }, [el]);
