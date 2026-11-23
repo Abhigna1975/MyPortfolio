@@ -3,7 +3,7 @@ import Profile from './assets/Profile.jpg';
 import './portfolio.css';
 
 const RESUME = '/Abhigna_Resume.pdf';
-const EMAIL = 'abhignamargam26@gmail.com';
+const EMAIL = 'abhignamargam12@gmail.com';
 const GITHUB = 'https://github.com/Abhigna1975';
 
 const nav = [
@@ -16,15 +16,28 @@ const nav = [
 
 const work = [
   {
-    tag: 'Startup, web and mobile',
-    title: 'Starteryou: owning design for a student startup',
-    role: 'UI/UX designer, end to end',
-    tools: ['Figma', 'Adobe XD', 'User testing'],
-    body: 'I design the interfaces, task flows and high fidelity prototypes in Figma for the Starteryou mobile app and web platform, and hand off specs to engineering.',
+    tag: 'Mobile app, iOS and Android',
+    title: 'Suggi: a kitchen garden app, from first screen to public release',
+    role: 'UI/UX design and development, client Organic Mandya',
+    tools: ['Figma', 'iOS', 'Android'],
+    body: 'Embedded with the client as a Forward Deployed Engineer, I designed the complete UI/UX for Suggi and developed it for both platforms, covering design, development, testing and release.',
     points: [
-      'Designed the events feature from user flows to final UI and admin dashboard',
-      'Built and maintain the Figma design system and component library',
-      'Ran user interviews and turned insights into personas and journey maps',
+      'Designed every screen manually in Figma, then built the app for iOS and Android',
+      'Took it through testing to a full public release for real users',
+      'Used AI-assisted development to design and ship faster',
+    ],
+    tone: 'sage',
+  },
+  {
+    tag: 'Startup website',
+    title: 'Starteryou: growing a startup website from 0 to 10K users',
+    role: 'UI/UX designer and frontend developer, end to end',
+    tools: ['Figma', 'Canva', 'HTML', 'CSS', 'JavaScript'],
+    body: 'I owned UI/UX design end to end, from wireframes and prototypes to website redesigns in Figma and Canva, and developed several of the website pages.',
+    points: [
+      'Wireframes, prototypes and website redesigns in Figma and Canva',
+      'Developed several website pages and helped grow the site from 0 to 10K users',
+      'Created promotion graphics and ran LinkedIn and Reddit to build brand awareness',
     ],
     links: [['View live', 'https://www.starteryou.com/']],
     img: '/work/starteryou-events.jpg',
@@ -74,47 +87,55 @@ const work = [
 const process = [
   ['01', 'Discover', 'Talk to users and stakeholders, review analytics, and find the real problem.'],
   ['02', 'Define', 'Personas, journey maps and task flows that the whole team agrees on.'],
-  ['03', 'Wireframe', 'Low fidelity layouts in Figma or Adobe XD to test structure before style.'],
+  ['03', 'Wireframe', 'Low fidelity layouts in Figma or Canva to test structure before style.'],
   ['04', 'Prototype', 'High fidelity, clickable prototypes built on the design system.'],
   ['05', 'Test', 'Usability tests, then iterate on what people actually struggled with.'],
-  ['06', 'Hand off', 'Specs, tokens and reviews with engineers so the build matches the design.'],
+  ['06', 'Build and ship', 'I build the design myself in code, test it and take it to release.'],
 ];
 
 const experience = [
   {
-    title: 'UI/UX Designer',
-    company: 'Starteryou',
-    when: 'Feb 2025 to Present',
+    title: 'Forward Deployed Engineer',
+    company: 'S9 Technologies',
+    when: 'Jul 2026 to Nov 2026',
     points: [
-      'Design intuitive user interfaces, wireframes, task flows and interactive high fidelity prototypes in Figma for a mobile app and web platform.',
-      'Conduct user interviews and turn insights into personas and journey maps that drive design decisions and product priorities.',
-      'Build and maintain a Figma design system and reusable component library that keeps the brand consistent and meets WCAG standards.',
-      'Facilitate design workshops and reviews, and partner with product and engineering to hand off specs and make sure designs ship as intended.',
-      'Use AI tools (Claude, GitHub Copilot, Gemini) to speed up ideation and prototyping.',
+      'Embedded with client Organic Mandya to understand business needs and deliver end-to-end digital solutions.',
+      'Designed and developed Suggi, a kitchen garden app, for iOS and Android and took it to a full public release.',
+      'Combined manual design in Figma with AI-assisted development to design and ship faster.',
+      "Managed the client's Shopify store: page builds, layout changes and ongoing updates.",
+      'Set up and managed Google Analytics to track traffic and user behavior and guide decisions.',
     ],
   },
   {
-    title: 'UI/UX Designer, Enterprise E-Commerce',
-    company: 'Nordstrom',
-    when: 'Mar 2022 to Dec 2024',
+    title: 'UI/UX Designer and Frontend Developer',
+    company: 'Starteryou',
+    when: 'Feb 2025 to Feb 2026',
     points: [
-      'Led UX design for an e-commerce platform serving millions of users, delivering wireframes, prototypes and polished UI across web and mobile in Figma and Adobe XD.',
-      'Ran usability testing and heuristic evaluations, and applied data and customer feedback to design changes that improved conversion by 12%.',
-      'Created personas, journey maps, task flows and information architecture that guided feature priorities and front end implementation.',
-      'Maintained a design system used by 20+ product teams, ensuring consistency, scalability and WCAG/ADA compliance.',
-      'Presented and justified design decisions to stakeholders in an Agile/Scrum team of product managers, engineers and researchers.',
+      'Owned UI/UX design end to end: wireframes, prototypes and website redesigns in Figma and Canva.',
+      'Developed several website pages and contributed to growing the Starteryou website from 0 to 10K users.',
+      'Led promotion: created graphics and managed LinkedIn and Reddit to build brand awareness and attract users.',
+      'Used AI tools such as Claude to speed up design, coding and iteration.',
+    ],
+  },
+  {
+    title: 'Web Designer and Full Stack Developer',
+    company: 'Nordstrom',
+    when: 'Aug 2022 to Jan 2025',
+    points: [
+      'Designed and built responsive web pages and UI components with HTML, CSS and JavaScript.',
+      'Developed full stack features, taking designs from Figma wireframes to production code.',
+      'Worked with product, design and engineering teams to turn requirements into shipped features.',
+      'Tested, debugged and iterated on features to improve usability and performance.',
     ],
   },
 ];
 
 const skills = [
-  ['Design tools', ['Figma', 'Adobe XD', 'Sketch', 'Miro', 'InVision']],
-  ['Core focus', ['Intuitive user interfaces', 'Wireframing', 'Interactive prototyping', 'Task flows', 'Information architecture']],
-  ['UX research', ['User interviews', 'Surveys', 'Usability testing', 'Heuristic evaluations', 'Personas', 'Journey maps']],
-  ['Design systems and accessibility', ['Component libraries', 'WCAG/ADA', 'Interaction and motion design']],
-  ['Development', ['HTML', 'CSS', 'React', 'Java']],
-  ['Collaboration', ['Agile/Scrum', 'Stakeholder management', 'Design workshops']],
-  ['AI tools', ['Claude', 'GitHub Copilot', 'Gemini', 'Prompt engineering']],
+  ['Design', ['Figma', 'Canva', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Website Redesign', 'Graphic Design']],
+  ['Development', ['HTML', 'CSS', 'JavaScript', 'Responsive Web Design', 'Frontend Development', 'iOS and Android App Development']],
+  ['Tools and platforms', ['Shopify', 'Google Analytics', 'GitHub', 'Git']],
+  ['AI and marketing', ['Claude and other AI design/dev tools', 'LinkedIn and Reddit Promotion', 'Social Media Graphics']],
+  ['Professional', ['Client Communication', 'Requirement Gathering', 'Problem Solving', 'Quick Learner']],
 ];
 
 function useActiveSection() {
@@ -168,11 +189,11 @@ export default function Portfolio() {
       <main id="top">
         <section className="hero wrap">
           <div className="hero-text">
-            <p className="eyebrow"><span className="dot" /> UI/UX Designer · 4+ years</p>
+            <p className="eyebrow"><span className="dot" /> UI/UX Designer · Frontend Developer · Forward Deployed Engineer</p>
             <h1>Designing interfaces that feel <em>obvious</em> to use.</h1>
             <p className="lede">
-              I'm Abhigna, a UI/UX designer who designs intuitive interfaces, wireframes and interactive prototypes in Figma and Adobe XD
-              for web and mobile. I own the full lifecycle, from research to developer handoff, and I build in React, so designs ship as built.
+              I'm Abhigna, with 4+ years of designing, prototyping and redesigning in Figma and Canva, building responsive websites
+              and iOS/Android apps, and driving growth through promotion. I work directly with clients, from requirements to release.
             </p>
             <div className="cta-row">
               <a href="#work" className="btn primary">See my work</a>
@@ -180,15 +201,15 @@ export default function Portfolio() {
             </div>
             <ul className="stats">
               <li><strong>4+</strong><span>years designing</span></li>
-              <li><strong>+12%</strong><span>conversion at Nordstrom</span></li>
-              <li><strong>20+</strong><span>teams on my design system</span></li>
+              <li><strong>10K</strong><span>users at Starteryou</span></li>
+              <li><strong>iOS + Android</strong><span>app taken to public release</span></li>
             </ul>
           </div>
           <figure className="hero-photo">
             <img src={Profile} alt="Abhigna Margam" width="809" height="809" />
             <figcaption>
               <span>Based in Denton, TX</span>
-              <span>Open to Los Angeles, CA</span>
+              <span>Open to relocation</span>
             </figcaption>
           </figure>
         </section>
@@ -197,14 +218,14 @@ export default function Portfolio() {
           <div className="section-head">
             <p className="kicker">Selected work</p>
             <h2>Case studies</h2>
-            <p className="section-sub">Three projects across a startup and e-commerce. Click any image to see it full size.</p>
+            <p className="section-sub">A mobile app, a startup website and e-commerce builds. Click any image to see it full size.</p>
           </div>
           <div className="work-list">
             {work.map((w, i) => (
               <Reveal as="article" key={w.title} className={`case tone-${w.tone}`}>
-                <a className="case-art" href={w.img} target="_blank" rel="noopener noreferrer" aria-label={`Open full size: ${w.title}`}>
+                {w.img && <a className="case-art" href={w.img} target="_blank" rel="noopener noreferrer" aria-label={`Open full size: ${w.title}`}>
                   <img src={w.img} alt={w.alt} loading="lazy" />
-                </a>
+                </a>}
                 <div className="case-text">
                   <div className="case-main">
                   <p className="case-tag">{w.tag}</p>
@@ -250,7 +271,7 @@ export default function Portfolio() {
         <section id="experience" className="section wrap">
           <div className="section-head">
             <p className="kicker">Experience</p>
-            <h2>Where I've designed</h2>
+            <h2>Where I've designed and built</h2>
           </div>
           <ol className="timeline">
             {experience.map((e) => (
@@ -288,10 +309,6 @@ export default function Portfolio() {
                 <p><strong>M.S. Computer Science and Information Technology</strong><br />Sacred Heart University, Fairfield, CT</p>
                 <p><strong>B.Tech Computer Science and Engineering</strong><br />AAR Mahaveer Engineering College, Hyderabad</p>
               </div>
-              <div>
-                <h3>Certifications</h3>
-                <p>Google UX Design Professional Certificate</p>
-              </div>
             </div>
           </div>
         </section>
@@ -299,7 +316,7 @@ export default function Portfolio() {
         <section id="contact" className="section wrap contact">
           <p className="kicker">Contact</p>
           <h2>Let's design something people <em>enjoy</em> using.</h2>
-          <p className="section-sub">Open to UI/UX designer roles and happy to relocate.</p>
+          <p className="section-sub">Open to UI/UX design, frontend and forward deployed engineering roles, and happy to relocate.</p>
           <div className="cta-row center">
             <a href={`mailto:${EMAIL}`} className="btn primary">{EMAIL}</a>
             <a href={GITHUB} target="_blank" rel="noopener noreferrer" className="btn ghost">GitHub</a>
