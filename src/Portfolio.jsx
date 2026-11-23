@@ -48,12 +48,11 @@ const work = [
     tag: 'E-commerce',
     title: 'Popnwrap: a simpler path to checkout',
     role: 'Full UX lifecycle',
-    tools: ['Figma', 'A/B testing', 'React'],
-    body: 'A gift shop selling balloon bouquets. I led the full UX lifecycle, from research, personas and journey maps to wireframes and prototypes, and A/B tested the checkout.',
+    tools: ['Figma', 'React'],
+    body: 'A gift shop selling balloon bouquets. I led the full UX lifecycle, from research, personas and journey maps to wireframes and prototypes, and redesigned the checkout flow.',
     points: [
       'Research, personas and journey maps for first time gift buyers',
       'Wireframed and prototyped the browse, product and cart flow',
-      'A/B testing improved checkout completion by 22%',
     ],
     links: [
       ['View live', 'https://popnwrap.vercel.app/'],
